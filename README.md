@@ -1,10 +1,10 @@
 # Abhimanyu Raj Singh
 
-###PROFILE
+### PROFILE
 I am an organised hard-working individual looking for a new responsible position to gain more knowledge and practical industry experience while refining my skills. I am self- motivated and serious about the loss of biodiversity services and move from core to do something about it.
 I am collecting experiences related to my choice of career in Ecology Modelling, Terrestrial Ecology Engineering, Invasive Species Management, Species and their element interactions as Environmental Scientist or Spatial Ecologist.
 
-###RECENT WORK EXPERIENCE
+### RECENT WORK EXPERIENCE
 Jan 2024 - MAR 2024
 EcoCommons/BCCVL(Biodiversity and Climate Change Virtual Laboratory), QCIF(Queensland Cyber Infrastructure Foundation), UQ (University of Queensland), Bisbane QLD. 
 • User Support Analyst (Part time)
@@ -42,7 +42,7 @@ Bachelor of Life Science – BS Zoology/Animal Biology
 Genetics, Cell Biology, Atoms and Molecules, Biochemistry,
 Developmental Biology, Animal Diversity.
 
-###VOLUNTEER WORK EXPERIENCE
+### VOLUNTEER WORK EXPERIENCE
 2022 JUNE – SEPT 2023 Green Infrastructure and Research Labs (GIRLS), Volunteer, Sydney, NSW.
 • Ecology volunteer
 Assisting PhD students designing experiments and ecological discussion, awareness interactions events, connecting with latest resources and technology. 2021 JUNE – DEC 2021 SEA BIN, Volunteer, Sydney, NSW.
@@ -60,7 +60,7 @@ To learn and identify local biodiversity. Picking invasive weed plants and litte
 • Student volunteer
 Picking invasive weed plants and litter from beaches and hiking trails to support native flora and fauna.
 
-###PREVIOUS WORK EXPERIENCE
+### PREVIOUS WORK EXPERIENCE
 NOV 2020 - JULY 2021 – GARDENING4U, Sydney, NSW
 • Gardner (Casual)
 Backyard and lawn maintenances. Planting, designing, maintaining, hedging, lawn, pruning and weeding.
