@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if(entry.isIntersecting) {
         entry.target.classList.add('show');
-        observer.unobserve(entry.target); // Optional: stop observing once shown
+        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.2 });
