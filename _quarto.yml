@@ -1,0 +1,8 @@
+project:
+  type: website
+
+website:
+  title: "Abhimanyu Raj Singh Chandel — Timeline Resume"
+  navbar: false
+  page-navigation: false
+  reader-mode: false
