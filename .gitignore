@@ -1,0 +1,23 @@
+/.quarto/
+# macOS system files
+.DS_Store
+
+# Quarto and build artefacts
+.quarto/
+_site/
+*.utf8.md
+
+# RStudio / temporary files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Python / virtual environments (if any)
+__pycache__/
+.env/
+.venv/
+
+# Logs and caches
+*.log
+*.tmp
