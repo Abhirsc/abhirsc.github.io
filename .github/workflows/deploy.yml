@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main]   # Run on every push to main branch
 
 permissions:
   contents: read
@@ -10,25 +10,37 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      # 🧾 1. Checkout the repo
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # ⚙️ 2. Set up Quarto (optional — only if you use Quarto)
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # 🧱 3. Render the Quarto site
+      - name: Render site
+        run: quarto render
+
+      # 🌐 4. Configure GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload site files
+      # 📦 5. Upload the rendered site folder (_site/)
+      - name: Upload built site
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: .   # Deploy everything from repo root (or _site if using Quarto)
+          path: _site
 
+      # 🚀 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
