@@ -1,7 +1,7 @@
 project:
   type: website
   pre-render:
-    - scripts/build_idea_blogs.sh
+    - bash scripts/build_idea_blogs.sh
   resources:
     - _generated/idea-blogs.html
     - idea-pages/*.txt
