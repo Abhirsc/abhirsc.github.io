@@ -1,0 +1,3 @@
+# From Traits to Decisions
+Using AusTraits and ecological covariates to support practical, transparent conservation choices.
+This page is generated automatically into the Idea-Blogs tab on render.
