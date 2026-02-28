@@ -30,7 +30,12 @@ escape_html() {
         title="$base"
       fi
 
-      excerpt="$(awk 'NF { print }' "$file" | sed '1d' | head -n 3 | tr '\n' ' ' | sed 's/[[:space:]]\+/ /g; s/^ //; s/ $//')"
+      # Avoid head/sed broken-pipe failures under set -euo pipefail in CI.
+      excerpt="$(
+        awk 'NF { c++; if (c > 1) { print; d++; if (d == 3) exit } }' "$file" \
+          | tr '\n' ' ' \
+          | sed 's/[[:space:]]\+/ /g; s/^ //; s/ $//'
+      )"
       if [ -z "$excerpt" ]; then
         excerpt="Open the file to add your content."
       fi
