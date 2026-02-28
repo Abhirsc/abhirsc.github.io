@@ -34,8 +34,41 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Show environment
+        run: |
+          set -euxo pipefail
+          quarto --version
+          uname -a
+          ls -la
+
+      - name: Clean build artifacts
+        run: |
+          set -euxo pipefail
+          rm -rf _site .quarto _generated .tmp
+
+      - name: Run pre-render generators
+        run: |
+          set -euxo pipefail
+          bash scripts/build_idea_blogs.sh
+          ls -la _generated
+
       - name: Render site
-        run: quarto render --verbose
+        run: |
+          set -o pipefail
+          quarto render --verbose 2>&1 | tee quarto-render.log
+
+      - name: Verify rendered homepage
+        run: |
+          set -euxo pipefail
+          test -f _site/index.html
+          touch _site/.nojekyll
+
+      - name: Upload render log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quarto-render-log
+          path: quarto-render.log
 
       # Use the official Pages artifact action (required format for deploy-pages).
       - name: Upload Pages artifact
