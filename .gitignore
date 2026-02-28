@@ -5,6 +5,8 @@
 # Quarto and build artefacts
 .quarto/
 _site/
+_generated/
+.tmp/
 *.utf8.md
 
 # RStudio / temporary files
