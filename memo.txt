@@ -1,0 +1,19 @@
+
+## Update Timeline Quickly
+The easiest workflow is to edit `/Users/abhirsc/Documents/resumetimeline/abhirsc.github.io/index.qmd` directly.
+
+1. Duplicate one existing year block (`<section class="dneg-year-block" ...>`) and update:
+   year id (`y-YYYY`), title, date line, preview text, image path, and `data-detail`.
+2. Duplicate one detail modal (`<div id="detail-YYYY" class="detail-modal" ...>`) and update:
+   id, heading, date line, and full text content.
+3. Add a matching year button in the rail:
+   `<button class="dneg-year" data-target="y-YYYY">YYYY</button>`.
+4. Keep rail buttons and year blocks in the same order (currently newest to oldest).
+5. Run `quarto render` from repo root to refresh `_site/index.html`.
+
+Tip: keep all image files in `images/` and reference them with the exact same filename case.
+
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1 A  | Row 1 B  | Row 1 C  |
+| Row 2 A  | Row 2 B  | Row 2 C  |

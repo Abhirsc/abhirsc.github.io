@@ -72,6 +72,9 @@ jobs:
 
       # Use the official Pages artifact action (required format for deploy-pages).
       - name: Upload Pages artifact
+        # Prevent duplicate `github-pages` artifacts on workflow re-runs.
+        # Re-runs can otherwise create a second artifact with the same name.
+        if: github.run_attempt == 1
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
