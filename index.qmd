@@ -7,7 +7,7 @@ css: styles.css
 
 ```{=html}
 <section class="name-banner" aria-label="Name and headshot">
-  <img src="Images/Headshots.jpg" alt="Abhimanyu headshot" class="name-headshot" />
+  <img src="images/Headshots.jpg" alt="Abhimanyu headshot" class="name-headshot" />
   <h1>Abhimanyu Raj Singh <em>Chandel</em></h1>
 </section>
 
@@ -43,7 +43,7 @@ css: styles.css
       <section class="dneg-year-block" id="y-2026" data-year="2026">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">2026</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="detail-2026" role="button" tabindex="0" aria-controls="detail-2026" aria-label="Open 2026 details">
-          <div class="dneg-media"><img src="Images/2026.jpeg" alt="QCIF data ecology work" class="dneg-img" /></div>
+          <div class="dneg-media"><img src="images/2026.jpeg" alt="QCIF data ecology work" class="dneg-img" /></div>
           <div class="dneg-copy">
             <h3>🧠 Data Ecologist, QCIF Sustainable Futures</h3>
             <p class="dneg-kicker">2026 - Present</p>
@@ -55,7 +55,7 @@ css: styles.css
       <section class="dneg-year-block" id="y-2024" data-year="2024">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">2024</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="detail-2024" role="button" tabindex="0" aria-controls="detail-2024" aria-label="Open 2024 details">
-          <div class="dneg-media"><img src="Images/2024.jpeg" alt="QCIF work in 2024" class="dneg-img" /></div>
+          <div class="dneg-media"><img src="images/2024.jpeg" alt="QCIF work in 2024" class="dneg-img" /></div>
           <div class="dneg-copy">
             <h3>💻 User Support Analyst, EcoCommons/BCCVL (Part-time)</h3>
             <p class="dneg-kicker">Jan 2024 - Mar 2024</p>
@@ -67,7 +67,7 @@ css: styles.css
       <section class="dneg-year-block" id="y-2023" data-year="2023">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">2023</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="detail-2023" role="button" tabindex="0" aria-controls="detail-2023" aria-label="Open 2023 details">
-          <div class="dneg-media"><img src="Images/2023.jpeg" alt="QCIF sustainable futures work in 2023" class="dneg-img" /></div>
+          <div class="dneg-media"><img src="images/2023.jpeg" alt="QCIF sustainable futures work in 2023" class="dneg-img" /></div>
           <div class="dneg-copy">
             <h3>🔬 Functional Ecology Analyst, QCIF Sustainable Futures</h3>
             <p class="dneg-kicker">2023 - Present</p>
@@ -79,7 +79,7 @@ css: styles.css
       <section class="dneg-year-block" id="y-2022" data-year="2022">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">2022</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="detail-2022" role="button" tabindex="0" aria-controls="detail-2022" aria-label="Open 2022 details">
-          <div class="dneg-media"><img src="Images/2022.jpeg" alt="Field work in 2022" class="dneg-img" /></div>
+          <div class="dneg-media"><img src="images/2022.jpeg" alt="Field work in 2022" class="dneg-img" /></div>
           <div class="dneg-copy">
             <h3>🧭 Field Officer, BUSH-IT</h3>
             <p class="dneg-kicker">Jan 2022 - Dec 2022</p>
@@ -91,7 +91,7 @@ css: styles.css
       <section class="dneg-year-block" id="y-2021" data-year="2021">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">2021</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="detail-2021" role="button" tabindex="0" aria-controls="detail-2021" aria-label="Open 2021 details">
-          <div class="dneg-media"><img src="Images/2021.jpg" alt="Field operations in 2021" class="dneg-img" /></div>
+          <div class="dneg-media"><img src="images/2021.jpg" alt="Field operations in 2021" class="dneg-img" /></div>
           <div class="dneg-copy">
             <h3>🛠️ Environmental Field Technician, SERS</h3>
             <p class="dneg-kicker">Aug 2020 - Apr 2021</p>
@@ -103,7 +103,7 @@ css: styles.css
       <section class="dneg-year-block" id="y-2020" data-year="2020">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">2020</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="detail-2020" role="button" tabindex="0" aria-controls="detail-2020" aria-label="Open 2020 details">
-          <div class="dneg-media"><img src="Images/2021.jpg" alt="Academic progress and field practice around 2020" class="dneg-img" /></div>
+          <div class="dneg-media"><img src="images/2021.jpg" alt="Academic progress and field practice around 2020" class="dneg-img" /></div>
           <div class="dneg-copy">
             <h3>🎓 Master's Coursework and Volunteer Ecology Work</h3>
             <p class="dneg-kicker">2020 - 2022</p>
@@ -115,7 +115,7 @@ css: styles.css
       <section class="dneg-year-block" id="y-2019" data-year="2019">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">2019</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="detail-2019" role="button" tabindex="0" aria-controls="detail-2019" aria-label="Open 2019 details">
-          <div class="dneg-media"><img src="Images/2021.jpg" alt="Early environmental science journey" class="dneg-img" /></div>
+          <div class="dneg-media"><img src="images/2021.jpg" alt="Early environmental science journey" class="dneg-img" /></div>
           <div class="dneg-copy">
             <h3>📘 Transition into Environmental Science Pathway</h3>
             <p class="dneg-kicker">2019</p>
