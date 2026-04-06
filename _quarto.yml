@@ -2,9 +2,12 @@ project:
   type: website
   pre-render:
     - bash scripts/build_idea_blogs.sh
+    - ruby scripts/build_timeline_from_csv.rb
   resources:
     - _generated/idea-blogs.html
+    - _generated/timeline.html
     - idea-pages/*.txt
+    - data/timeline.csv
 
 website:
   title: "Abhimanyu Raj Singh Chandel — Timeline Resume"

@@ -1,18 +1,23 @@
 # Abhimanyu Raj Singh
 
 ## Update Timeline Quickly
-The easiest workflow is to edit `/Users/abhirsc/Documents/resumetimeline/abhirsc.github.io/index.qmd` directly.
+Timeline entries are now generated from `/Users/abhirsc/Documents/resumetimeline/abhirsc.github.io/data/timeline.csv`.
 
-1. Duplicate one existing year block (`<section class="dneg-year-block" ...>`) and update:
-   year id (`y-YYYY`), title, date line, preview text, image path, and `data-detail`.
-2. Duplicate one detail modal (`<div id="detail-YYYY" class="detail-modal" ...>`) and update:
-   id, heading, date line, and full text content.
-3. Add a matching year button in the rail:
-   `<button class="dneg-year" data-target="y-YYYY">YYYY</button>`.
-4. Keep rail buttons and year blocks in the same order (currently newest to oldest).
-5. Run `quarto render` from repo root to refresh `_site/index.html`.
+1. Edit `data/timeline.csv`.
+2. Update the row you want or add a new row.
+3. Run `quarto render` from repo root.
+4. The page rebuilds `_generated/timeline.html` automatically and the site updates from that CSV.
 
-Tip: keep all image files in `images/` and reference them with the exact same filename case.
+Use these columns in `data/timeline.csv`:
+`sort_order, year, period, title, preview, detail, image, alt`
+
+Notes:
+Keep image files in `images/` and use the exact same filename case.
+Higher `sort_order` values appear first in the timeline.
+
+Idea-Blogs are easier to manage as plain text files:
+Add `idea-pages/page3.txt`, `idea-pages/page4.txt`, and render.
+Each new file is picked up automatically in the `Idea-Blogs` tab.
 
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
