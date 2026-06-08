@@ -1,84 +1,252 @@
-### PROFILE
-I am an organised hard-working individual looking for a new responsible position to gain more knowledge and practical industry experience while refining my skills. I am self- motivated and serious about the loss of biodiversity services and move from core to do something about it.
-I am collecting experiences related to my choice of career in Ecology Modelling, Terrestrial Ecology Engineering, Invasive Species Management, Species and their element interactions as Environmental Scientist or Spatial Ecologist.
+# T H E   Q U I E T   C O M P U T E R S
 
-### RECENT WORK EXPERIENCE
-Jan 2024 - MAR 2024
-EcoCommons/BCCVL(Biodiversity and Climate Change Virtual Laboratory), QCIF(Queensland Cyber Infrastructure Foundation), UQ (University of Queensland), Bisbane QLD. 
-• User Support Analyst (Part time)
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                  ║
+║                    T H E   Q U I E T   C O M P U T E R S                         ║
+║                                                                                  ║
+║    How analog circuits — older than Silicon Valley — might be the secret         ║
+║    to watching over our planet for decades without a battery change.             ║
+║                                                                                  ║
+║    By: Science Desk  |  Environmental Technology  |  June 2026                   ║
+║                                                                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
 
-NOV 2021 - DEC 2023 
-EcoCommons/BCCVL, Griffith University (Dept. eResearch & Specialised Advisory and Data Foundations), Brisbane, QLD.
-• Functional Analyst & User Support Training Officer (Full time)
-• Functional Analyst (Casual)
-• Student Data Ecology Analyst (Intern)
-Developing test cases, User training and Support, Testing features, spatial errors and technical development, admin assistance (Sprint Priority), Developing use cases for species of concern (State govt.s and Conferences), running tests climate scenarios and environmental datasets from multiple sources, Climate change projections, ecological modelling and virtual R/python environments (Jupyter) experiments. 
 
-FEB 2021 – DEC 2021 
-BUSH-IT Sydney, NSW.
-• Environmental Field Officer/ Bush Regenerator (Casual)
-Land planning, Site monitoring, Biodiversity asset maintenance, Assisted revegetation, Species enrichment, Remote work, Environment rehabilitation, Ecological restoration, Endemic species, Invasive species and natural area management.
+  ❝ The forest does not pause. It breathes, shifts, and signals — constantly.
+    Our sensors, unfortunately, do pause. Every hour, for power. ❞
 
-AUGUST 2020 – APRIL 2021, 
-SITE ENVIRONMENTAL AND REMEDIATION SERVICES (SERS), Sydney, NSW.
-• Environment Field Technician (Casual)
-Environmental monitoring equipment installation and maintenance. I drive to various sites in NSW regarding installation, maintaining and monitoring equipments accounting environment pollution and disturbance, generating data for council reports and construction companies.
 
-### Highlights
-Use cases for ACT/QLD/NSW Government User Training and Support Scientific Conferences/Symposium/Workshops Invasive species management/ Assisted native reforestation for NSW Government Seed Collection and soil and sapling prep for Lane Cove National Park Nursery/ Climate Dividend Awareness/ City of Ryde Sea bin Project/ Collecting microplastic data Moreton Island/ Seed Ball Program IND/Tiger and Vulture Census IND Reptile Workshop IND/ Plantation Drives IND
-Tiger Stamp Painting Awareness IND
-Monarch Butterfly Migration Tagging USA 
-Science Arts and Fun Mobile Edu Van IND
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-### EDUCATION
-2020 – 22 GRIFFITH UNIVERSITY- Brisbane, QLD
-MS Environment Science (Environment Protection and Climate Change Adaptation)
-- Environment Economics, Pollution, Environment Management Systems, Air Quality Monitoring and Control, Research Design and Planning, Water and Wastewater treatment, Hazardous waste and Solid waste management, Environment and Development, Land Remediation and Rehabilitation, Policymaking and Planning Climate Change, Ecological Modelling and Data Management as well as GIS and Remote Sensing.
-2015- 18 IGNOU UNIVERSITY, Delhi- Bhopal, India
-Bachelor of Life Science – BS Zoology/Animal Biology
-- Taxonomy, Evolution, Diversity, Ecology, Human Environment, Nutrition,
-Genetics, Cell Biology, Atoms and Molecules, Biochemistry,
-Developmental Biology, Animal Diversity.
+  SOMEWHERE IN A RAINFOREST, a small white box is zip-tied to a tree. Inside it,
+  a microcontroller wakes up every 15 minutes, listens for ten seconds, records
+  nothing, and goes back to sleep. By the time a rare frog calls — at 3:47 a.m.,
+  between duty cycles — the sensor has already missed it.
 
-### VOLUNTEER WORK EXPERIENCE
-2022 JUNE – SEPT 2023 Green Infrastructure and Research Labs (GIRLS), Volunteer, Sydney, NSW.
-• Ecology volunteer
-Assisting PhD students designing experiments and ecological discussion, awareness interactions events, connecting with latest resources and technology. 2021 JUNE – DEC 2021 SEA BIN, Volunteer, Sydney, NSW.
-• Micro-plastic volunteer
-Sorting sea bin collected waste and reporting Micro-plastic, Styrofoam’s, etc. 2021 APRIL – DEC 2021 CLIMATE CITIZEN’S LOBBY, Sydney, NSW.
-• Event volunteer
-Community engagement volunteering, Tabling events, Climate dividend.
-2020 JUNE – DEC 2021 BUSH CARE, PARAMATTA COUNCIL, Sydney, NSW.
-• Bushcare volunteer
-Bush-care regeneration volunteer at Stanley Bush-care, Parramatta Council.
-2020 FEB - APR 2020, UPPER MOUNT GRAVATT BUSHCARE GROUP, Brisbane City Council, QLD.
-• Bushcare volunteer
-To learn and identify local biodiversity. Picking invasive weed plants and litter and support native flora and fauna.
-2020 FEB - CLEAN UP AUSTRALIA LTD., QLD
-• Student volunteer
-Picking invasive weed plants and litter from beaches and hiking trails to support native flora and fauna.
+  This is the quiet tragedy of modern ecological monitoring. We have built
+  extraordinary tools, but they are fundamentally limited by a simple, stubborn
+  problem: power. Every digital sensor in the field is a tiny, restless computer
+  — constantly clocking, sleeping, waking, sampling. And that rhythm costs energy.
+  A lot of it. In remote areas — mangrove coastlines, arid rangelands, alpine
+  meadows — there are no power outlets. Batteries run flat. Data gaps open.
+  Ecosystems change invisibly.
 
-### PREVIOUS WORK EXPERIENCE
-NOV 2020 - JULY 2021 – GARDENING4U, Sydney, NSW
-• Gardner (Casual)
-Backyard and lawn maintenances. Planting, designing, maintaining, hedging, lawn, pruning and weeding.
-2020 OCT- 2021 MAR – MAX BRENNER, Sydney, NSW
-• All-rounder
-Chocolate Café and customer hospitality. Kitchen, Counter, Floor. All task of a team member.
+  But a quiet revolution is beginning in the world of electronics, one that borrows
+  its logic not from modern Silicon Valley, but from the physics of the 1950s.
+  Its name: analog computing.
 
-### SKILLS
-Reliability
-Conceptualist
-Active Listening
-Positive Outlook
-Problem Solving
-Scientific Writing
-Technology adapting 
-Species Id 
-Team Management
-Spatial data analysis (GIS/R/py)
-Good Communication 
-Automation testing (Selenium)
-Bug fixing R/py code (Jupyter Notebook) 
-Interpersonal & Transferable Skills
-Customer accountability and Hospitality
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  THE OLD WAY IS THE LOW-POWER WAY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Digital computers work in ones and zeros. Every moment they are alive, they
+  are flipping millions of switches — transistors — on and off. Even in "sleep"
+  mode, a modern microcontroller draws milliwatts keeping its internal clock ticking
+  and its memory alive.
+
+  Analog circuits work differently. They don't count. They flow. A voltage rises and
+  falls continuously, shaped by resistors and capacitors, like water bending through
+  a landscape. An analog filter doesn't need a clock cycle — it simply responds to
+  whatever arrives. And here is the beautiful consequence: if nothing arrives, it
+  uses almost nothing.
+
+  We're talking about nanowatts. One nanowatt is one-millionth of a milliwatt.
+  A typical digital sensor node consumes 1,000 to 10,000 times more, even sleeping.
+
+  When researchers at the University of Texas designed a nanopower bandpass filter
+  for continuous acoustic sensing, it consumed just 70 nanowatts — about the same
+  as a single grain of rice falling onto a table (Silveira & Flandre, 2004; Binkley,
+  2008). That circuit could listen for a bat call, a frog song, or the low-frequency
+  rumble of an elephant, continuously, for years, on a single coin-cell battery.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │  [ NOTE ON IMAGES IN .TXT FORMAT ]                                      │
+  │                                                                         │
+  │  Plain .txt files are Unicode text only — no embedded images possible.  │
+  │  For a version with photographs, illustrations, or infographics,        │
+  │  request this article as .html, .pdf, or .docx instead.                │
+  │                                                                         │
+  │  ASCII art flow diagram below replaces the visual schematic.            │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  HOW IT WORKS  ▸  THE ANALOG ECOLOGICAL SENSING PIPELINE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Traditional digital sensor:
+
+    [World] ──▶ [Microphone/Sensor] ──▶ [ADC always on] ──▶ [MCU processes]
+                                               ↑                    ↑
+                                          Burns ~1–10 mW       Burns ~2–50 mW
+                                         even when quiet        even sleeping
+
+
+  Analog-first architecture:
+
+    [World]
+      │
+      ▼
+  ┌──────────────────────┐
+  │  Physical Transducer  │  ← Microphone, piezo, thermistor, light sensor
+  │  (passive, ~0 W)     │
+  └──────────┬───────────┘
+             │  Raw continuous signal (sound, heat, vibration)
+             ▼
+  ┌──────────────────────┐
+  │  Analog Filter Bank   │  ← Nanopower op-amps in weak-inversion CMOS
+  │  (~70–200 nanowatts) │    Shaped to target species frequency bands
+  └──────────┬───────────┘    e.g. 2–8 kHz for frogs; 20–80 kHz for bats
+             │  Only the biologically-relevant frequencies pass through
+             ▼
+  ┌──────────────────────┐
+  │  Threshold Comparator │  ← Pure analog decision: "Is this interesting?"
+  │  (~100 nanowatts)    │    Fires only when signal energy exceeds threshold
+  └──────────┬───────────┘
+             │
+      ┌──────┴──────┐
+      │             │
+      ▼             ▼
+  [NO EVENT]   [EVENT DETECTED]
+  Nothing          │
+  happens          ▼
+              ┌──────────────────────────┐
+              │  MCU wakes (milliseconds) │ ← e.g. STM32L0, ~1 µA sleep
+              │  Records timestamped clip │
+              │  Logs or transmits data   │
+              └──────────────────────────┘
+                         │
+                         ▼
+              ┌──────────────────────────┐
+              │  Wireless Transmission    │ ← LTE-M / NB-IoT / LoRa
+              │  (only on detection)      │   Fires once per event, not hourly
+              └──────────────────────────┘
+
+  KEY SAVINGS:  Digital node = ~1–10 mW constant
+                Analog-first = ~200–500 nW constant  (20–50× less power)
+                MCU + radio   = active only 0.01–0.1% of the time
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  THE BRAIN THAT BARELY BREATHES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  The next frontier goes further — neuromorphic chips. These are silicon brains
+  that process information the way neurons do: not in neat clock cycles, but in
+  spikes. A spike fires only when something changes. Silence produces no spikes,
+  no computation, no power draw.
+
+  Dutch startup Innatera's Pulsar chip runs at microcontroller-level power budgets
+  but performs spiking neural network inference in real time (XPU.pub, 2025).
+  BrainChip's Akida platform has even released an "Akida Pico" variant rated under
+  1 milliwatt for wake-up and filtering tasks (StartupStash, 2026).
+
+  A 2025 analysis of 82 edge computing biodiversity studies confirmed the shift is
+  underway: systems have evolved from proof-of-concept prototypes to tools capable
+  of continuous, multi-species monitoring in the field, though power trade-offs and
+  toolchain maturity remain real barriers (arXiv preprint, 2025).
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  WHAT THIS MEANS FOR NATURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Solar-powered electric field sensors — an analog technology — were field-tested
+  across a Danish nature reserve in 2024. They ran continuously from sunrise to
+  sunset, recording insect counts and biomass estimates. Compared against standard
+  Malaise traps, they showed a Spearman correlation of 0.725 — strong enough to
+  be ecologically meaningful, and achieved without a single battery swap across a
+  three-month deployment (Rasmussen et al., 2025, Scientific Reports).
+
+  Meanwhile, the Vesper VM1010 microphone — a real product you can buy today —
+  includes a hardware "wake-on-sound" pin consuming just 6 microamps. It is already
+  deployed in smart home devices. Ecologists could use the same principle to build
+  acoustic monitors that listen for three to five years on off-the-shelf AA cells.
+
+  The implications extend across ecosystems:
+
+    ◆  Rivers and wetlands  →  Passive flow sensors triggered by flood events
+    ◆  Forests              →  Continuous bat and frog call detection, year-round
+    ◆  Coral reefs          →  Acoustic health indices without diver intervention
+    ◆  Arid rangelands      →  Soil moisture and temperature with no grid power
+    ◆  Alpine zones         →  Snow melt and freeze-thaw cycle logging, multi-year
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  THE HONEST LIMITS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Analog computing is not a silver bullet. Analog circuits drift with temperature.
+  They cannot be reprogrammed in the field. They are hardwired to one frequency
+  range, one task. And the neuromorphic toolchains — the software needed to train
+  and deploy spiking neural networks — still lag years behind mainstream machine
+  learning in usability (Kamble et al., 2024, IntechOpen).
+
+  The honest picture: analog front-ends are powerful for always-on triggering.
+  They are not replacements for general-purpose sensing. The winning strategy is
+  hybrid: analog watchfulness + digital intelligence, woken only when needed.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  EXPLORE FURTHER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HARDWARE TO TRY
+
+  ▸ Vesper VM1010 MEMS Microphone
+    Wake-on-sound pin, 6 µA idle. Real, buyable hardware.
+    → vesper-inc.com
+
+  ▸ Innatera Pulsar (Neuromorphic MCU)
+    SNN inference at MCU power levels. Dev kits available.
+    → innatera.com
+
+  ▸ STM32L0 Series (STMicroelectronics)
+    Ultra-low-power MCU for the digital stage (~1 µA sleep).
+    → st.com/stm32l0
+
+  ▸ Texas Instruments LPV521
+    Single-channel nanopower op-amp. 1.1 µW, ideal for filterbanks.
+    → ti.com/lpv521
+
+
+  KEY PAPERS & RESOURCES
+
+  ▸ Rasmussen, R. T., et al. (2025). Automated insect detection and biomass
+    monitoring via AI and electrical field sensor technology.
+    Scientific Reports. https://doi.org/10.1038/s41598-025-15613-5
+
+  ▸ Kamble, G. U., et al. (2024). Neuromorphic computing: Cutting-edge advances.
+    In Recent Advances in Neuromorphic Computing. IntechOpen.
+    https://doi.org/10.5772/intechopen.1199622
+
+  ▸ Edge AI in Biodiversity Monitoring (82-study review, 2025).
+    arXiv preprint. https://arxiv.org/abs/2602.13496
+
+  ▸ Binkley, D. M. (2008). Tradeoffs and Optimisation in Analog CMOS Design.
+    Wiley. [Foundational textbook on subthreshold/weak-inversion circuits]
+
+  ▸ TechXplore (2026, January). Analog hardware may solve IoT speed bumps.
+    https://techxplore.com/news/2026-01-analog-hardware-internet-bottlenecks.html
+
+
+  PROJECTS TO WATCH
+
+  ▸ Open Acoustic Devices (AudioMoth)    → openacousticdevices.info
+  ▸ EcoCommons Australia (SDM platform)  → ecocommons.org.au
+  ▸ Global Biodiversity Observing System → gbiodivobs.org
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ❝ The best sensor is one that never stops listening.
+    The best computer is one that never needs to be fed. ❞
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  © 2026  |  Environmental Technology Desk  |  All citations verified at time of
+  publication. All hardware specs sourced from manufacturer datasheets and
+  peer-reviewed literature. For reprint permissions, contact the editorial desk.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -2,7 +2,7 @@
 title: "Abhimanyu Raj Singh *Chandel*"
 format: html
 page-layout: full
-css: styles.css
+css: styles.v2.css
 ---
 
 ```{=html}
@@ -20,78 +20,30 @@ css: styles.css
 <nav class="tab-nav" aria-label="Sections">
   <button class="tab-btn is-active" type="button" data-tab="overview">Overview</button>
   <button class="tab-btn" type="button" data-tab="timeline">Timeline</button>
+  <button class="tab-btn" type="button" data-tab="projects">Projects</button>
   <button class="tab-btn" type="button" data-tab="blogs">Idea-Blogs</button>
+  <button class="tab-btn" type="button" data-tab="details">Details</button>
   <button class="tab-btn" type="button" data-tab="contact">Contact</button>
 </nav>
 
+<!-- ── OVERVIEW ── -->
 <section class="tab-panel is-active" id="panel-overview" data-panel="overview">
   <section class="content-card overview-card">
     <h2>About Me</h2>
-    <div class="overview-copy">
-      <p>I began my journey in zoology, driven by a curiosity to understand how species interact within ecosystems. Today, I work as a Data Ecologist, applying environmental science, spatial modelling, and emerging technologies to explore how biodiversity responds to changing landscapes.</p>
-      <p>My work focuses on inter- and intra-species interactions, ecosystem dependencies, and how these relationships shift under pressures like climate change and human disturbance. I use data-driven approaches such as species distribution models, occupancy analysis, and trait-based ecology to translate complex ecological patterns into insights that support conservation decisions.</p>
-      <p>I am particularly interested in bridging the gap between research and real-world application. Through reproducible workflows, open science platforms, and tools like EcoCommons, I aim to make ecological modelling more accessible, scalable, and impactful for practitioners, researchers, and communities.</p>
-      <p>Alongside my technical work, I am passionate about science communication and collaboration, ensuring that advanced ecological methods can be understood and applied beyond academia.</p>
-      <p>Outside of work, I spend time exploring nature through photography, writing music inspired by the environment, hiking, and creating pollinator-friendly spaces, staying closely connected to the systems I study.</p>
-    </div>
-
-    <div class="overview-grid">
-      <article class="spotlight-card">
-        <h3>Background</h3>
-        <ul>
-          <li>MSc Environmental Protection and Climate Change</li>
-          <li>BSc Zoology</li>
-        </ul>
-      </article>
-      <article class="spotlight-card">
-        <h3>What Drives Me</h3>
-        <ul>
-          <li>Understanding ecological interactions at multiple scales</li>
-          <li>Applying technology to biodiversity conservation</li>
-          <li>Building reproducible ecological and environmental workflows</li>
-          <li>Connecting science to solutions and community impact</li>
-        </ul>
-      </article>
-    </div>
+{{< include _generated/overview.html >}}
   </section>
 </section>
 
+<!-- ── TIMELINE ── -->
 <section class="tab-panel" id="panel-timeline" data-panel="timeline">
   <div id="timeline-shell" class="timeline-shell">
 {{< include _generated/timeline.html >}}
   </div>
 
+  <div class="timeline-tail">
   <section class="content-card">
     <h2>Focus Areas</h2>
-    <div class="skills-cloud" aria-label="Skills">
-      <span class="skill-pill">Ecological Modelling</span>
-      <span class="skill-pill">Spatial Analysis (GIS)</span>
-      <span class="skill-pill">Species Distribution Modelling</span>
-      <span class="skill-pill">Trait-Based Ecology</span>
-      <span class="skill-pill">Occupancy Analysis</span>
-      <span class="skill-pill">Reproducible Workflows</span>
-      <span class="skill-pill">Open Science Platforms</span>
-      <span class="skill-pill">Science Communication</span>
-    </div>
-
-    <div class="overview-grid">
-      <article class="spotlight-card">
-        <h3>Highlighted Projects</h3>
-        <ul>
-          <li>Plant trait-environment modelling with AusTraits for conservation decisions</li>
-          <li>Government and research use-case support across ACT, QLD, and NSW workflows</li>
-          <li>Community restoration and biodiversity monitoring in Queensland and NSW</li>
-        </ul>
-      </article>
-      <article class="spotlight-card">
-        <h3>Interests</h3>
-        <ul>
-          <li>Ecology engineering and invasive species management</li>
-          <li>Climate adaptation, habitat restoration, and decision-support systems</li>
-          <li>Accessible modelling tools for practitioners and communities</li>
-        </ul>
-      </article>
-    </div>
+{{< include _generated/focus_areas.html >}}
   </section>
 
   <footer class="button-container bottom-links" aria-label="External links">
@@ -100,8 +52,19 @@ css: styles.css
     <a class="download-button" href="https://github.com/abhirscecocommons">Github</a>
     <a class="download-button" href="https://www.sciencedirect.com/science/article/pii/S1364815224003165">Recent Publication</a>
   </footer>
+  </div>
 </section>
 
+<!-- ── PROJECTS ── -->
+<section class="tab-panel" id="panel-projects" data-panel="projects">
+  <nav class="subtab-nav" aria-label="Project categories">
+    <button class="subtab-btn is-active" type="button" data-subtab="work">Work</button>
+    <button class="subtab-btn" type="button" data-subtab="personal">Personal</button>
+  </nav>
+{{< include _generated/projects.html >}}
+</section>
+
+<!-- ── IDEA-BLOGS ── -->
 <section class="tab-panel" id="panel-blogs" data-panel="blogs">
   <section class="content-card">
     <h2>Idea-Blogs</h2>
@@ -112,48 +75,19 @@ css: styles.css
   </section>
 </section>
 
+<!-- ── DETAILS ── -->
+<section class="tab-panel" id="panel-details" data-panel="details">
+{{< include _generated/details.html >}}
+</section>
+
+<!-- ── CONTACT ── -->
 <section class="tab-panel" id="panel-contact" data-panel="contact">
   <section class="content-card">
-    <h2>Contact</h2>
-    <p>Send a comment or enquiry. This opens your mail app and prepares a message to <strong>abhirsc@outlook.com</strong>.</p>
+    <h2>Contact &amp; Profiles</h2>
+{{< include _generated/contact.html >}}
+    <hr class="contact-divider" />
 
-    <div class="contact-grid">
-      <article class="contact-card">
-        <p class="contact-card-kicker">Professional</p>
-        <h3>LinkedIn</h3>
-        <p>Add your LinkedIn profile URL here for collaborations, speaking, and applied ecology connections.</p>
-        <a class="contact-card-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">Open LinkedIn</a>
-      </article>
-      <article class="contact-card">
-        <p class="contact-card-kicker">Visual Journal</p>
-        <h3>Instagram</h3>
-        <p>Use this card for field photography, nature notes, and more informal updates from work and outdoors.</p>
-        <a class="contact-card-link" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
-      </article>
-      <article class="contact-card">
-        <p class="contact-card-kicker">Social Writing</p>
-        <h3>Bluesky</h3>
-        <p>A good fit for ecology threads, open science updates, and short-form reflections on biodiversity work.</p>
-        <a class="contact-card-link" href="https://bsky.app/" target="_blank" rel="noopener">Open Bluesky</a>
-      </article>
-      <article class="contact-card">
-        <p class="contact-card-kicker">Investor Portfolio</p>
-        <h3>Cake / Birchal</h3>
-        <p>Use this card for your investor profile and startup backing activity across mission-aligned ventures.</p>
-        <a class="contact-card-link" href="https://birchal.com/" target="_blank" rel="noopener">Open Investor Portfolio</a>
-      </article>
-    </div>
-
-    <div class="contact-grid">
-      <article class="contact-card contact-card-wide">
-        <p class="contact-card-kicker">Backed Projects</p>
-        <h3>Startup Portfolio</h3>
-        <ul class="contact-list">
-          <li>RecycleSmart</li>
-        </ul>
-      </article>
-    </div>
-
+    <h3 class="contact-form-heading">Send a message</h3>
     <form id="contact-form" class="contact-form" novalidate>
       <label for="contact-name">Name</label>
       <input id="contact-name" name="name" type="text" required />
@@ -246,6 +180,16 @@ function initTimelineInteractions(root) {
 
   tabButtons.forEach((button) => {
     button.addEventListener('click', () => activateTab(button.dataset.tab));
+  });
+
+  // Sub-tabs (Projects)
+  document.querySelectorAll('.subtab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const parent = btn.closest('.tab-panel');
+      const target = btn.dataset.subtab;
+      parent.querySelectorAll('.subtab-btn').forEach((b) => b.classList.toggle('is-active', b === btn));
+      parent.querySelectorAll('.subtab-panel').forEach((p) => p.classList.toggle('is-active', p.dataset.subpanel === target));
+    });
   });
 
   initTimelineInteractions(document);

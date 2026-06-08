@@ -1,0 +1,6 @@
+sort_order,section,type,kicker,title,description,url,badge_label,badge_class
+1,story,feature,"Interview · The Interview Portal","Data Ecologist — How I Got Here","A conversation about the path from zoology to data ecology, working on open science platforms, and using technology to make biodiversity modelling more accessible.",https://theinterviewportal.com/2026/03/14/data-ecologist-interview/,,
+10,publications,pub,"Environmental Modelling & Software · 2024","Recent Publication","Peer-reviewed research in ecological modelling and software — exploring reproducible methods for biodiversity decision-support.",https://www.sciencedirect.com/science/article/pii/S1364815224003165,ScienceDirect →,
+20,publications,orcid,"Research Identity","OrcID Profile","Full list of works, affiliations, and contributions linked to a persistent researcher identifier.",https://orcid.org/0000-0002-2279-7060,0000-0002-2279-7060 →,orcid-badge
+30,investor,platform,,Birchal,,"https://birchal.com/",,
+31,investor,backed,,RecycleSmart,,,,

@@ -12,7 +12,7 @@ out_file = File.join(out_dir, "timeline.html")
 
 FileUtils.mkdir_p(out_dir)
 
-rows = CSV.read(csv_path, headers: true).map(&:to_h)
+rows = CSV.read(csv_path, headers: true, encoding: "utf-8").map(&:to_h)
 rows.sort_by! { |row| -row.fetch("sort_order", row.fetch("year", "0")).to_i }
 
 def normalize_image_path(path)
@@ -44,7 +44,10 @@ rows.each do |row|
   detail = CGI.escapeHTML(row["detail"].to_s).gsub("\n", "<br>\n      ")
   image = CGI.escapeHTML(normalize_image_path(row["image"]))
   alt = CGI.escapeHTML(row["alt"].to_s)
+  link = row["link"].to_s.strip
   detail_id = "detail-#{year}"
+
+  link_html = link.empty? ? "" : "\n          <a class=\"detail-link\" href=\"#{CGI.escapeHTML(link)}\" target=\"_blank\" rel=\"noopener\">Visit Website ↗</a>"
 
   html << <<~HTML
       <section class="dneg-year-block" id="y-#{year}" data-year="#{year}">
@@ -64,7 +67,7 @@ rows.each do |row|
           <button class="detail-close" type="button" onclick="forceCloseDetailModal('#{detail_id}')" aria-label="Close details">&times;</button>
           <h3 id="detail-title-#{year}">#{title}</h3>
           <p class="dneg-kicker">#{period}</p>
-          <p>#{detail}</p>
+          <p>#{detail}</p>#{link_html}
         </div>
       </div>
 

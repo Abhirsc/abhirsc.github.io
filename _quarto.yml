@@ -3,11 +3,26 @@ project:
   pre-render:
     - bash scripts/build_idea_blogs.sh
     - ruby scripts/build_timeline_from_csv.rb
+    - ruby scripts/build_overview.rb
+    - ruby scripts/build_focus_areas.rb
+    - ruby scripts/build_projects.rb
+    - ruby scripts/build_details.rb
+    - ruby scripts/build_contact.rb
   resources:
     - _generated/idea-blogs.html
     - _generated/timeline.html
+    - _generated/overview.html
+    - _generated/focus_areas.html
+    - _generated/projects.html
+    - _generated/details.html
+    - _generated/contact.html
     - idea-pages/*.txt
     - data/timeline.csv
+    - data/overview.csv
+    - data/focus_areas.csv
+    - data/projects.csv
+    - data/details.csv
+    - data/contact.csv
 
 website:
   title: "Abhimanyu Raj Singh Chandel — Timeline Resume"
