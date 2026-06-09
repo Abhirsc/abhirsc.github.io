@@ -10,50 +10,31 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    concurrency:
-      group: "pages"
-      cancel-in-progress: true
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Show environment
-        run: |
-          set -euxo pipefail
-          quarto --version
-          uname -a
-          ls -la
-
-      - name: Clean build artifacts
-        run: |
-          set -euxo pipefail
-          rm -rf _site .quarto .tmp
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
 
-      - name: Run pre-render generators
+      - name: Generate content from CSVs
         run: |
-          set -euxo pipefail
           ruby scripts/build_idea_blogs.rb
           ruby scripts/build_timeline_from_csv.rb
           ruby scripts/build_overview.rb
@@ -61,27 +42,13 @@ jobs:
           ruby scripts/build_projects.rb
           ruby scripts/build_details.rb
           ruby scripts/build_contact.rb
-          ls -la _generated
 
       - name: Render site
-        run: |
-          set -o pipefail
-          quarto render --verbose 2>&1 | tee quarto-render.log
+        run: quarto render
 
-      - name: Verify rendered homepage
-        run: |
-          set -euxo pipefail
-          test -f _site/index.html
-          touch _site/.nojekyll
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
-      - name: Upload render log
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: quarto-render-log
-          path: quarto-render.log
-
-      # Use the official Pages artifact action (required format for deploy-pages).
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
