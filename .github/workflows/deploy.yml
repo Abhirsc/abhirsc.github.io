@@ -46,10 +46,21 @@ jobs:
           set -euxo pipefail
           rm -rf _site .quarto _generated .tmp
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
       - name: Run pre-render generators
         run: |
           set -euxo pipefail
-          bash scripts/build_idea_blogs.sh
+          ruby scripts/build_idea_blogs.rb
+          ruby scripts/build_timeline_from_csv.rb
+          ruby scripts/build_overview.rb
+          ruby scripts/build_focus_areas.rb
+          ruby scripts/build_projects.rb
+          ruby scripts/build_details.rb
+          ruby scripts/build_contact.rb
           ls -la _generated
 
       - name: Render site

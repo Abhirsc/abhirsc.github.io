@@ -1,7 +1,7 @@
 project:
   type: website
   pre-render:
-    - bash scripts/build_idea_blogs.sh
+    - ruby scripts/build_idea_blogs.rb
     - ruby scripts/build_timeline_from_csv.rb
     - ruby scripts/build_overview.rb
     - ruby scripts/build_focus_areas.rb
