@@ -44,7 +44,7 @@ jobs:
       - name: Clean build artifacts
         run: |
           set -euxo pipefail
-          rm -rf _site .quarto _generated .tmp
+          rm -rf _site .quarto .tmp
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
