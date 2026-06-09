@@ -401,6 +401,9 @@ body{
 .blog-entry p{
   margin: 0;
   line-height: 1.68;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .blog-entry a{

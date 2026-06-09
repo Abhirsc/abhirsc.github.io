@@ -23,6 +23,7 @@ project:
     - data/projects.csv
     - data/details.csv
     - data/contact.csv
+    - images/
 
 website:
   title: "Abhimanyu Raj Singh Chandel — Timeline Resume"

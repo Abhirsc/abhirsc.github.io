@@ -23,7 +23,9 @@ else
     lines  = File.readlines(path, encoding: "utf-8").map(&:rstrip).reject(&:empty?)
     title  = lines.first.to_s.sub(/^#+\s*/, "").strip
     title  = base if title.empty?
-    excerpt = lines.drop(1).first(3).join(" ").strip
+    # Skip decorative lines (mostly non-alphanumeric: box chars, dashes, equals, pipes)
+    text_lines = lines.drop(1).select { |l| l.gsub(/[^[:alnum:]]/, "").length > 8 }
+    excerpt = text_lines.first(3).join(" ").strip
     excerpt = "Open the file to add your content." if excerpt.empty?
 
     html << "  <article class=\"blog-entry\">\n"
