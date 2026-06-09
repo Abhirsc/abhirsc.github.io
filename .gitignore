@@ -2,6 +2,9 @@
 # macOS system files
 .DS_Store
 
+# Original high-res images (keep compressed versions only)
+images/*_original.*
+
 # Quarto and build artefacts
 .quarto/
 _site/
