@@ -25,6 +25,7 @@ categories.each_with_index do |cat, idx|
   html << "  <div class=\"project-grid\">\n"
 
   rows.select { |r| r["category"].to_s.strip == cat }.each do |row|
+    coming_soon = row["coming_soon"].to_s.strip.downcase == "true"
     kicker = CGI.escapeHTML(row["kicker"].to_s.strip)
     title  = CGI.escapeHTML(row["title"].to_s.strip)
     desc   = CGI.escapeHTML(row["description"].to_s.strip)
@@ -34,7 +35,8 @@ categories.each_with_index do |cat, idx|
     l2l    = row["link2_label"].to_s.strip
     l2u    = row["link2_url"].to_s.strip
 
-    html << "    <article class=\"project-card\">\n"
+    card_class = coming_soon ? "project-card coming-soon" : "project-card"
+    html << "    <article class=\"#{card_class}\">\n"
     html << "      <div class=\"project-card-header\">\n"
     html << "        <p class=\"project-kicker\">#{kicker}</p>\n"
     html << "        <h3>#{title}</h3>\n"
@@ -47,14 +49,19 @@ categories.each_with_index do |cat, idx|
       html << "      </ul>\n"
     end
 
-    html << "      <div class=\"project-links\">\n"
-    unless l1l.empty? || l1u.empty?
-      html << "        <a class=\"project-link\" href=\"#{CGI.escapeHTML(l1u)}\" target=\"_blank\" rel=\"noopener\">#{CGI.escapeHTML(l1l)}</a>\n"
+    if coming_soon
+      html << "      <span class=\"coming-soon-badge\">Coming Soon</span>\n"
+    else
+      html << "      <div class=\"project-links\">\n"
+      unless l1l.empty? || l1u.empty?
+        html << "        <a class=\"project-link\" href=\"#{CGI.escapeHTML(l1u)}\" target=\"_blank\" rel=\"noopener\">#{CGI.escapeHTML(l1l)}</a>\n"
+      end
+      unless l2l.empty? || l2u.empty?
+        html << "        <a class=\"project-link project-link-outline\" href=\"#{CGI.escapeHTML(l2u)}\" target=\"_blank\" rel=\"noopener\">#{CGI.escapeHTML(l2l)}</a>\n"
+      end
+      html << "      </div>\n"
     end
-    unless l2l.empty? || l2u.empty?
-      html << "        <a class=\"project-link project-link-outline\" href=\"#{CGI.escapeHTML(l2u)}\" target=\"_blank\" rel=\"noopener\">#{CGI.escapeHTML(l2l)}</a>\n"
-    end
-    html << "      </div>\n"
+
     html << "    </article>\n"
   end
 

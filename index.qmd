@@ -21,8 +21,8 @@ css: styles.v2.css
   <button class="tab-btn is-active" type="button" data-tab="overview">Overview</button>
   <button class="tab-btn" type="button" data-tab="timeline">Timeline</button>
   <button class="tab-btn" type="button" data-tab="projects">Projects</button>
-  <button class="tab-btn" type="button" data-tab="blogs">Idea-Blogs</button>
-  <button class="tab-btn" type="button" data-tab="details">Details</button>
+  <button class="tab-btn" type="button" data-tab="imprint">Imprint</button>
+  <button class="tab-btn" type="button" data-tab="impact">Impact</button>
   <button class="tab-btn" type="button" data-tab="contact">Contact</button>
 </nav>
 
@@ -31,6 +31,12 @@ css: styles.v2.css
   <section class="content-card overview-card">
     <h2>About Me</h2>
 {{< include _generated/overview.html >}}
+  </section>
+
+  <section class="content-card">
+    <h2>Skills &amp; Expertise</h2>
+    <p style="font-size:.82rem;color:var(--muted-strong);margin:-.3rem 0 1rem">Maintained in <code>data/skills.csv</code> — add a row with <code>category</code> + <code>skill</code> columns and rebuild to update.</p>
+{{< include _generated/skills.html >}}
   </section>
 </section>
 
@@ -64,20 +70,350 @@ css: styles.v2.css
 {{< include _generated/projects.html >}}
 </section>
 
-<!-- ── IDEA-BLOGS ── -->
-<section class="tab-panel" id="panel-blogs" data-panel="blogs">
+<!-- ── IMPRINT (renamed from Idea-Blogs) ── -->
+<section class="tab-panel" id="panel-imprint" data-panel="imprint">
   <section class="content-card">
-    <h2>Idea-Blogs</h2>
-    <p>Add files like <code>idea-pages/page3.txt</code> and render. Each new page file will appear here automatically.</p>
-    <div id="idea-blog-list">
-{{< include _generated/idea-blogs.html >}}
+    <nav class="subtab-nav" aria-label="Imprint sections">
+      <button class="subtab-btn is-active" type="button" data-subtab="interviews">Interviews &amp; News</button>
+      <button class="subtab-btn" type="button" data-subtab="certs">Certificates &amp; Awards</button>
+      <button class="subtab-btn" type="button" data-subtab="pubs">Publications &amp; Research</button>
+      <button class="subtab-btn" type="button" data-subtab="investor">Investor Portfolio</button>
+    </nav>
+
+    <!-- Interviews & News -->
+    <div class="subtab-panel is-active" data-subpanel="interviews">
+      <h2>Interviews &amp; News</h2>
+      <div class="news-grid">
+        <a class="news-card" href="https://theinterviewportal.com/2026/03/14/data-ecologist-interview/" target="_blank" rel="noopener">
+          <p class="news-card-source">Interview · The Interview Portal · Mar 2026</p>
+          <h3>Data Ecologist — How I Got Here</h3>
+          <p>A conversation about the path from zoology to data ecology, working on open science platforms, and using technology to make biodiversity modelling more accessible.</p>
+          <span class="news-card-read">Read &#8594;</span>
+        </a>
+        <a class="news-card" href="https://www.theindiansun.com.au/2026/09/12/132350/" target="_blank" rel="noopener">
+          <p class="news-card-source">Profile · The Indian Sun · Sep 2026</p>
+          <h3>Eureka Prize — Data Ecologist on the EcoCommons Win</h3>
+          <p>Covers the 2026 Australian Museum Eureka Prize win for EcoCommons Australia, the Eastern Bristlebird discovery story, and the philosophy behind open ecological data platforms.</p>
+          <span class="news-card-read">Read &#8594;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Certificates & Awards -->
+    <div class="subtab-panel" data-subpanel="certs">
+      <h2>Certificates &amp; Awards</h2>
+
+      <div class="awards-list">
+        <div class="award-card award-gold">
+          <div class="award-icon">&#127942;</div>
+          <div class="award-body">
+            <p class="award-org">Australian Museum · 2026</p>
+            <h3>Eureka Prize — Data Platforms</h3>
+            <p class="award-desc">Team award for EcoCommons Australia — national cloud platform that put species distribution modelling in the hands of 2,000+ researchers and government agencies. Eastern Bristlebird discovery cited as a headline outcome.</p>
+          </div>
+        </div>
+
+        <div class="award-card award-silver">
+          <div class="award-icon">&#127885;</div>
+          <div class="award-body">
+            <p class="award-org">Griffith University · 2023</p>
+            <h3>Vice Chancellor Award — Excellence in Enhancing Research</h3>
+            <p class="award-desc">Team recognition for contributions to research infrastructure and platform delivery through EcoCommons and Biosecurity Commons, presented at the Griffith Gala.</p>
+          </div>
+        </div>
+
+        <div class="award-card award-silver">
+          <div class="award-icon">&#127885;</div>
+          <div class="award-body">
+            <p class="award-org">CAUDIT — Council of Australasian University Directors of IT · 2022</p>
+            <h3>Excellence in Research Support</h3>
+            <p class="award-desc">EcoCommons Australia and Biosecurity Commons recognised for innovative use of digital technology in support of ecological and biosecurity research activities across Australian universities.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin:2rem 0 .8rem;font-size:1rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted-strong);font-weight:700">Licences &amp; Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <p class="cert-meta">NASBA · Feb 2024</p>
+          <h3>R Programming for Data Science: High Variety Data Management</h3>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">LinkedIn · Jan 2024</p>
+          <h3>Python Data Analysis</h3>
+          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">Data structures in Python · NumPy · Pandas</p>
+        </div>
+        <div class="cert-card cert-card-placeholder">
+          <p class="cert-meta" style="opacity:.6">+ 13 more on LinkedIn</p>
+          <h3 style="opacity:.5">More certifications</h3>
+          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">Share the remaining certs to add them here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Publications & Research -->
+    <div class="subtab-panel" data-subpanel="pubs">
+      <h2>Publications &amp; Research Identity</h2>
+      <div class="pub-grid">
+        <a class="pub-card" href="https://www.sciencedirect.com/science/article/pii/S1364815224003165" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">Environmental Modelling &amp; Software · 2024</p>
+            <h3>Recent Publication</h3>
+          </div>
+          <p>Peer-reviewed research in ecological modelling and software — exploring reproducible methods for biodiversity decision-support.</p>
+          <span class="pub-badge">ScienceDirect &#8599;</span>
+        </a>
+        <a class="pub-card" href="https://iopscience.iop.org/article/10.1088/2752-5295/ae70a5" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">Environmental Research: Climate · 2026 · Open Access</p>
+            <h3>Downscaled Projections of Bioclimatic Indices for Species Distribution Modelling in Australia</h3>
+          </div>
+          <p>A case study for the Greater Glider — producing fine-resolution bioclimatic variables from downscaled climate projections to improve species distribution model accuracy for threatened species under future climate scenarios.</p>
+          <span class="pub-badge">IOP Science &#8599;</span>
+        </a>
+        <a class="pub-card" href="https://orcid.org/0000-0002-2279-7060" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">Research Identity</p>
+            <h3>OrcID Profile</h3>
+          </div>
+          <p>Full list of works, affiliations, and contributions linked to a persistent researcher identifier.</p>
+          <span class="pub-badge orcid-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 3.872-2.412 3.872-3.722 0-2.016-1.284-3.722-3.862-3.722h-2.307z"/></svg>
+            0000-0002-2279-7060 &#8599;
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Investor Portfolio -->
+    <div class="subtab-panel" data-subpanel="investor">
+      <h2>Investor Portfolio</h2>
+      <p>Mission-aligned startup backing across sustainability, conservation technology, and community impact ventures.</p>
+      <div class="investor-grid">
+        <article class="spotlight-card">
+          <h3>Platform</h3>
+          <ul><li><a href="https://birchal.com/" target="_blank" rel="noopener" style="color:var(--ink)">Birchal</a></li></ul>
+        </article>
+        <article class="spotlight-card">
+          <h3>Backed Projects</h3>
+          <ul><li>RecycleSmart</li></ul>
+        </article>
+      </div>
     </div>
   </section>
 </section>
 
-<!-- ── DETAILS ── -->
-<section class="tab-panel" id="panel-details" data-panel="details">
-{{< include _generated/details.html >}}
+<!-- ── IMPACT (renamed from Details) ── -->
+<section class="tab-panel" id="panel-impact" data-panel="impact">
+
+  <!-- Why My Research Matters -->
+  <section class="content-card">
+    <h2>Why My Research Matters</h2>
+    <p style="font-size:1.05rem;line-height:1.72;margin:0 0 1rem;max-width:760px">We are in the middle of a biodiversity crisis. The IPBES estimates one million species face extinction within decades — yet the tools to predict where, how fast, and what we can do about it have historically sat behind high computing barriers, specialist software, and institutional gatekeepers. My work is about closing that gap.</p>
+    <div class="impact-pillars">
+      <div class="impact-pillar">
+        <p class="impact-pillar-title">Ecological Intelligence at National Scale</p>
+        <p>Through EcoCommons, I help make cloud-based species distribution and biodiversity modelling accessible to ecologists across Australia — without requiring institutional computing infrastructure or deep technical expertise. Every reproducible workflow published is a method that can be reused, audited, and built upon by the whole community.</p>
+      </div>
+      <div class="impact-pillar">
+        <p class="impact-pillar-title">From Data to Conservation Decision</p>
+        <p>My position between technical development and the scientific community is the bridge. I support the full journey from raw data to actionable insight — testing digital products for usability, training ecologists in new workflows, translating findings across disciplines, and communicating complex ecological information to the people who need it most. Adapting to new tools, discovering better solutions, and connecting science to real-world problems is where I work best.</p>
+      </div>
+      <div class="impact-pillar">
+        <p class="impact-pillar-title">Science That Reaches People</p>
+        <p>The most rigorous analysis means nothing if it stays locked in a specialist pipeline. I prioritise connecting ecological solutions to the communities, organisations, and decision-makers who need them — whether that's a regional NGO, a government agency, or an international research body. Open platforms, plain-language outputs, and direct engagement are how science earns its impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- By the Numbers -->
+  <section class="content-card impact-numbers-card">
+    <div class="impact-numbers-header">
+      <h2 style="margin:0 0 .25rem">By the Numbers</h2>
+      <p style="margin:0;font-size:.92rem;color:var(--muted-strong);letter-spacing:.03em;text-transform:uppercase">Research reach &amp; outcomes</p>
+    </div>
+    <div class="impact-stats-grid">
+
+      <div class="istat">
+        <div class="istat-top"><span class="istat-num">2,000<sup>+</sup></span></div>
+        <div class="istat-label">Researchers &amp; agencies</div>
+        <div class="istat-context">using EcoCommons Australia for species distribution modelling &amp; biodiversity analysis — platform-wide public figure</div>
+        <div class="dot-grid" data-fill="40" data-total="40" data-overflow="true"></div>
+      </div>
+
+      <div class="istat">
+        <div class="istat-top"><span class="istat-num">116</span></div>
+        <div class="istat-label">People directly trained</div>
+        <div class="istat-context">ESA 2025 · Resbaz 2024 · IDW Brisbane 2025 plenary · EIW workshops · BRIN Indonesia · NZ science · Victoria NGO · NSW Gov · CSIRO · BirdLife</div>
+        <div class="dot-grid" data-fill="24" data-total="24" data-overflow="true"></div>
+      </div>
+
+      <div class="istat">
+        <div class="istat-top"><span class="istat-num">21</span></div>
+        <div class="istat-label">GitHub repositories</div>
+        <div class="istat-context">9 + 12 across two accounts — open workflows, SDM tools, ecological indicators &amp; migratory modelling starters</div>
+        <div class="dot-grid" data-fill="21" data-total="25"></div>
+      </div>
+
+      <div class="istat">
+        <div class="istat-top"><span class="istat-num">6</span><span class="istat-unit">mo</span></div>
+        <div class="istat-label">To locate new EBB populations</div>
+        <div class="istat-context">EcoCommons SDM predicted candidate habitat &#8594; acoustic sensors deployed &#8594; Eastern Bristlebird confirmed within 6 months</div>
+        <div class="dot-grid" data-fill="6" data-total="12"></div>
+      </div>
+
+      <div class="istat">
+        <div class="istat-top"><span class="istat-num">4</span></div>
+        <div class="istat-label">Scholarly citations</div>
+        <div class="istat-context">Semantic Scholar · Sep 2026 · 2 peer-reviewed papers — Env. Modelling &amp; Software (2024) · Env. Research: Climate (2026)</div>
+        <div class="dot-grid" data-fill="4" data-total="10"></div>
+      </div>
+
+      <div class="istat">
+        <div class="istat-top"><span class="istat-num" style="font-size:2.8rem;letter-spacing:-.03em">Eureka</span></div>
+        <div class="istat-label">2026 Australian Museum Prize</div>
+        <div class="istat-context">EcoCommons Australia · Data Platforms category · 2019–20 bushfire impact assessments for Superb Lyrebird &amp; Greater Sooty Owl cited as key outcomes</div>
+        <div class="dot-grid" data-fill="1" data-total="5"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Species I've Worked With -->
+  <section class="content-card">
+    <h2>Species I've Worked With</h2>
+    <p style="margin:0 0 .5rem;font-size:.97rem;color:var(--muted-strong)">Click any card to read about the research context. Add photos to <code>images/species/</code> named by the slug shown below.</p>
+
+    <div class="species-grid">
+
+      <button class="species-card" data-species="greater-glider" style="--thumb-bg:rgba(140,90,30,.12)">
+        <div class="species-thumb"><img src="images/species/gl.jpeg" alt="Greater Glider" onerror="this.style.display='none'"><span class="sp-emoji">&#127769;</span></div>
+        <div class="species-info">
+          <span class="species-common">Greater Glider</span>
+          <span class="species-scientific">Petauroides volans</span>
+          <span class="taxonomy-badge tx-mammal">Mammal</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="ebb" style="--thumb-bg:rgba(50,100,60,.12)">
+        <div class="species-thumb"><img src="images/species/ebb.jpeg" alt="Eastern Bristlebird" onerror="this.style.display='none'"><span class="sp-emoji">&#129413;</span></div>
+        <div class="species-info">
+          <span class="species-common">Eastern Bristlebird</span>
+          <span class="species-scientific">Dasyornis brachypterus</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="noisy-miner" style="--thumb-bg:rgba(50,110,170,.1)">
+        <div class="species-thumb"><img src="images/species/nm.jpeg" alt="Noisy Miner" onerror="this.style.display='none'"><span class="sp-emoji">&#128038;</span></div>
+        <div class="species-info">
+          <span class="species-common">Noisy Miner</span>
+          <span class="species-scientific">Manorina melanocephala</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="regent-honeyeater" style="--thumb-bg:rgba(40,90,155,.12)">
+        <div class="species-thumb"><img src="images/species/rh.jpeg" alt="Regent Honeyeater" onerror="this.style.display='none'"><span class="sp-emoji">&#128330;</span></div>
+        <div class="species-info">
+          <span class="species-common">Regent Honeyeater</span>
+          <span class="species-scientific">Anthochaera phrygia</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="richmond-birdwing" style="--thumb-bg:rgba(130,50,155,.1)">
+        <div class="species-thumb"><img src="images/species/rbb.jpeg" alt="Richmond Birdwing" onerror="this.style.display='none'"><span class="sp-emoji">&#129419;</span></div>
+        <div class="species-info">
+          <span class="species-common">Richmond Birdwing</span>
+          <span class="species-scientific">Ornithoptera richmondia</span>
+          <span class="taxonomy-badge tx-insect">Insect</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="lyrebird" style="--thumb-bg:rgba(50,105,160,.1)">
+        <div class="species-thumb"><img src="images/species/sl.jpeg" alt="Superb Lyrebird" onerror="this.style.display='none'"><span class="sp-emoji">&#127925;</span></div>
+        <div class="species-info">
+          <span class="species-common">Superb Lyrebird</span>
+          <span class="species-scientific">Menura novaehollandiae</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="lantana" style="--thumb-bg:rgba(190,50,30,.09)">
+        <div class="species-thumb"><img src="images/species/lan.jpeg" alt="Lantana" onerror="this.style.display='none'"><span class="sp-emoji">&#127802;</span></div>
+        <div class="species-info">
+          <span class="species-common">Lantana</span>
+          <span class="species-scientific">Lantana camara</span>
+          <span class="taxonomy-badge tx-invasive">Invasive</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="act-threatened" style="--thumb-bg:rgba(90,90,90,.08)">
+        <div class="species-thumb"><img src="images/species/act.jpeg" alt="ACT Threatened Species" onerror="this.style.display='none'"><span class="sp-emoji">&#127956;</span></div>
+        <div class="species-info">
+          <span class="species-common">ACT Threatened Species</span>
+          <span class="species-scientific">Multiple spp.</span>
+          <span class="taxonomy-badge tx-group">Group</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="mangroves-bc" style="--thumb-bg:rgba(20,100,90,.12)">
+        <div class="species-thumb"><img src="images/species/mbc.jpeg" alt="Mangroves Blue Carbon" onerror="this.style.display='none'"><span class="sp-emoji">&#127754;</span></div>
+        <div class="species-info">
+          <span class="species-common">Mangroves — Blue Carbon</span>
+          <span class="species-scientific">Avicennia / Rhizophora spp.</span>
+          <span class="taxonomy-badge tx-plant">Plant</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="migratory-birds" style="--thumb-bg:rgba(60,110,180,.09)">
+        <div class="species-thumb"><img src="images/species/mb.jpeg" alt="Migratory Birds" onerror="this.style.display='none'"><span class="sp-emoji">&#127759;</span></div>
+        <div class="species-info">
+          <span class="species-common">Migratory Birds</span>
+          <span class="species-scientific">Multiple spp.</span>
+          <span class="taxonomy-badge tx-group">Group</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="mangroves-sg" style="--thumb-bg:rgba(20,110,80,.1)">
+        <div class="species-thumb"><img src="images/species/msg.jpeg" alt="Mangroves Singapore" onerror="this.style.display='none'"><span class="sp-emoji">&#127796;</span></div>
+        <div class="species-info">
+          <span class="species-common">Mangroves (Singapore)</span>
+          <span class="species-scientific">Multiple spp.</span>
+          <span class="taxonomy-badge tx-plant">Plant</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="gossia" style="--thumb-bg:rgba(70,130,60,.1)">
+        <div class="species-thumb"><img src="images/species/gos.jpeg" alt="Gossia" onerror="this.style.display='none'"><span class="sp-emoji">&#127807;</span></div>
+        <div class="species-info">
+          <span class="species-common">Gossia</span>
+          <span class="species-scientific">Gossia spp.</span>
+          <span class="taxonomy-badge tx-plant">Plant</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="plains-wanderer" style="--thumb-bg:rgba(160,130,30,.1)">
+        <div class="species-thumb"><img src="images/species/pw.jpeg" alt="Plains Wanderer" onerror="this.style.display='none'"><span class="sp-emoji">&#129718;</span></div>
+        <div class="species-info">
+          <span class="species-common">Plains Wanderer</span>
+          <span class="species-scientific">Pedionomus torquatus</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="greater-sooty-owl" style="--thumb-bg:rgba(40,40,55,.1)">
+        <div class="species-thumb"><img src="images/species/gso.jpeg" alt="Greater Sooty Owl" onerror="this.style.display='none'"><span class="sp-emoji">&#129423;</span></div>
+        <div class="species-info">
+          <span class="species-common">Greater Sooty Owl</span>
+          <span class="species-scientific">Tyto tenebricosa</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+    </div>
+  </section>
 </section>
 
 <!-- ── CONTACT ── -->
@@ -106,6 +442,161 @@ css: styles.v2.css
   </section>
 </section>
 
+<!-- ── Species modals ── -->
+<div class="species-modal" id="sm-greater-glider">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('greater-glider')">&times;</button>
+    <img class="species-panel-img" src="images/species/gl.jpeg" alt="Greater Glider" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127769;</span>
+    <h3>Greater Glider</h3>
+    <p class="sci">Petauroides volans</p>
+    <span class="taxonomy-badge tx-mammal" style="margin-bottom:.9rem;display:inline-block">Mammal</span>
+    <p>The case study species in my 2026 paper — downscaled bioclimatic projections for species distribution modelling in Australia (<em>Environmental Research: Climate</em>, 2026). The Greater Glider is a threatened arboreal marsupial whose range is contracting under warming temperatures; the paper demonstrates how high-resolution climate projections improve SDM accuracy for this species, with implications for conservation planning across its eastern Australian range.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-ebb">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('ebb')">&times;</button>
+    <img class="species-panel-img" src="images/species/ebb.jpeg" alt="Eastern Bristlebird" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129413;</span>
+    <h3>Eastern Bristlebird</h3>
+    <p class="sci">Dasyornis brachypterus</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <p>EcoCommons was used to predict undiscovered habitat for this endangered bird — combining known observation records with environmental layers to identify likely undetected populations. Field teams deployed acoustic sensors in the predicted areas and detected new individuals within six months. This outcome was highlighted in the EcoCommons team's 2026 Australian Museum Eureka Prize profile as a demonstration of the platform's real-world conservation impact.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-noisy-miner">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('noisy-miner')">&times;</button>
+    <img class="species-panel-img" src="images/species/nm.jpeg" alt="Noisy Miner" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128038;</span>
+    <h3>Noisy Miner</h3>
+    <p class="sci">Manorina melanocephala</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <p>A native honeyeater that has become functionally overabundant in degraded woodland edges, where it aggressively excludes smaller insectivores. Noisy Miner dominance is a recognised indicator of woodland decline and was tracked across survey sites as part of bird community assessments — high densities flagging habitats requiring structural restoration to support functional biodiversity.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-regent-honeyeater">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('regent-honeyeater')">&times;</button>
+    <img class="species-panel-img" src="images/species/rh.jpeg" alt="Regent Honeyeater" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128330;</span>
+    <h3>Regent Honeyeater</h3>
+    <p class="sci">Anthochaera phrygia</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <p>Critically endangered woodland bird — fewer than 350–500 individuals remain across roughly 600,000 km&#178; of fragmented habitat in south-eastern Australia, making it one of the rarest songbirds on Earth. The species has lost its song culture in captivity, raising concern about recovery viability. [Add specific research output or dataset link here.]</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-richmond-birdwing">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('richmond-birdwing')">&times;</button>
+    <img class="species-panel-img" src="images/species/rbb.jpeg" alt="Richmond Birdwing" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129419;</span>
+    <h3>Richmond Birdwing</h3>
+    <p class="sci">Ornithoptera richmondia</p>
+    <span class="taxonomy-badge tx-insect" style="margin-bottom:.9rem;display:inline-block">Insect</span>
+    <p>One of Australia's largest butterflies, restricted to a narrow corridor of subtropical rainforest in south-east Queensland. Critically threatened by the invasive Dutchman's Pipe vine (<em>Aristolochia elegans</em>) — a toxic look-alike of the larval host plant that lures females to lay eggs on a plant that kills their caterpillars. Weed management and habitat restoration are essential for recovery. [Add specific research output or dataset link here.]</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-lyrebird">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('lyrebird')">&times;</button>
+    <img class="species-panel-img" src="images/species/sl.jpeg" alt="Superb Lyrebird" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127925;</span>
+    <h3>Superb Lyrebird</h3>
+    <p class="sci">Menura novaehollandiae</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <p>EcoCommons species distribution models were used to assess the impact of the 2019–20 Black Summer bushfires on Superb Lyrebird and Greater Sooty Owl habitat — estimating what proportion of suitable range was burnt across south-eastern Australia and modelling recovery trajectories. These outputs were cited as key examples of EcoCommons' real-world conservation utility and contributed to the platform's 2026 Eureka Prize win. The lyrebird is also an ecosystem engineer; its scratching and digging cycles nutrients and shapes understorey structure, so its post-fire decline has cascading effects on forest regeneration.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-lantana">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('lantana')">&times;</button>
+    <img class="species-panel-img" src="images/species/lan.jpeg" alt="Lantana" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127802;</span>
+    <h3>Lantana</h3>
+    <p class="sci">Lantana camara</p>
+    <span class="taxonomy-badge tx-invasive" style="margin-bottom:.9rem;display:inline-block">Invasive</span>
+    <p>One of the world's worst invasive plant species — a dense flowering shrub that forms impenetrable thickets, suppresses native understorey, and degrades habitat for ground-dwelling fauna. Mapped and modelled as part of weed-impact assessments; distribution data used alongside native species SDMs to prioritise management interventions in subtropical Queensland restoration projects.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-act-threatened">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('act-threatened')">&times;</button>
+    <img class="species-panel-img" src="images/species/act.jpeg" alt="ACT Threatened Species" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127956;</span>
+    <h3>ACT Threatened Species</h3>
+    <p class="sci">Multiple spp.</p>
+    <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
+    <p>Ecological indicator workflows developed with QCIF and partners drew on monitoring datasets spanning multiple threatened species listed under the ACT Nature Conservation Act. [Add specific species groups, projects, or NatureMap context here.]</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-mangroves-bc">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('mangroves-bc')">&times;</button>
+    <img class="species-panel-img" src="images/species/mbc.jpeg" alt="Mangroves Blue Carbon" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127754;</span>
+    <h3>Mangroves — Blue Carbon</h3>
+    <p class="sci">Avicennia / Rhizophora spp.</p>
+    <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
+    <p>Mangrove ecosystems are among the most carbon-dense habitats on Earth — sequestering carbon at rates far exceeding terrestrial forests. Research involvement in blue carbon accounting, mapping mangrove extent and condition as part of nature-based climate solutions work. The Global Carbon Density Explorer tool draws on similar above-ground carbon datasets.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-migratory-birds">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('migratory-birds')">&times;</button>
+    <img class="species-panel-img" src="images/species/mb.jpeg" alt="Migratory Birds" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127759;</span>
+    <h3>Migratory Birds</h3>
+    <p class="sci">Multiple spp.</p>
+    <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
+    <p>Migratory species modelling — see the <code>getting_started_with_migratory_modelling</code> repository. Migratory birds using the East Asian–Australasian Flyway face pressures at every stopover: habitat loss, climate-driven phenology mismatches, and loss of intertidal feeding areas. Distribution models help identify which stopover sites are most critical and most at risk. [Add specific species groups or outputs here.]</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-mangroves-sg">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('mangroves-sg')">&times;</button>
+    <img class="species-panel-img" src="images/species/msg.jpeg" alt="Mangroves Singapore" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127796;</span>
+    <h3>Mangroves (Singapore)</h3>
+    <p class="sci">Multiple spp.</p>
+    <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
+    <p>[Add research context here — Singapore mangrove survey, restoration, or remote sensing work.]</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-gossia">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('gossia')">&times;</button>
+    <img class="species-panel-img" src="images/species/gos.jpeg" alt="Gossia" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127807;</span>
+    <h3>Gossia</h3>
+    <p class="sci">Gossia spp.</p>
+    <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
+    <p>[Add research context here — Gossia is a genus of rainforest myrtles; some species are critically endangered in SEQ. Survey, modelling, or trait data involvement?]</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-plains-wanderer">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('plains-wanderer')">&times;</button>
+    <img class="species-panel-img" src="images/species/pw.jpeg" alt="Plains Wanderer" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129718;</span>
+    <h3>Plains Wanderer</h3>
+    <p class="sci">Pedionomus torquatus</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <p>Critically endangered and one of Australia's most enigmatic grassland birds — so evolutionarily distinct it occupies its own family, Pedionomidae. Dependent on native grassland with sparse, patchy ground cover that is rapidly disappearing to cropping and pasture improvement. [Add research context — survey, indicator workflow, or SDM involvement.]</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-greater-sooty-owl">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('greater-sooty-owl')">&times;</button>
+    <img class="species-panel-img" src="images/species/gso.jpeg" alt="Greater Sooty Owl" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129423;</span>
+    <h3>Greater Sooty Owl</h3>
+    <p class="sci">Tyto tenebricosa</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <p>EcoCommons species distribution models were used alongside the Superb Lyrebird to assess the impact of the 2019–20 Black Summer bushfires on Greater Sooty Owl habitat across south-eastern Australia. A large, specialist predator of old-growth forest, the owl is highly sensitive to fire intensity and hollow loss — making it a reliable indicator of old-growth forest condition. These SDM outputs were cited as a key real-world conservation outcome contributing to the EcoCommons team's 2026 Eureka Prize win.</p>
+  </div>
+</div>
+
 <script>
 function forceCloseDetailModal(id) {
   const modal = document.getElementById(id);
@@ -116,6 +607,11 @@ function closeDetailModal(id, event) {
   if (event && event.target && event.target.classList.contains('detail-modal')) {
     forceCloseDetailModal(id);
   }
+}
+
+function closeSpecies(id) {
+  const modal = document.getElementById('sm-' + id);
+  if (modal) modal.classList.remove('open');
 }
 
 function initTimelineInteractions(root) {
@@ -143,7 +639,6 @@ function initTimelineInteractions(root) {
       const modal = document.getElementById(detailId);
       if (modal) modal.style.display = 'flex';
     };
-
     card.addEventListener('click', open);
     card.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
@@ -158,7 +653,6 @@ function initTimelineInteractions(root) {
       const visible = entries
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
       if (visible) setActive(visible.target.dataset.year);
     },
     { threshold: [0.2, 0.4, 0.6, 0.8] }
@@ -168,10 +662,47 @@ function initTimelineInteractions(root) {
   if (yearBlocks[0]) setActive(yearBlocks[0].dataset.year);
 }
 
+function initGalleryEl(wrapper) {
+  const slides = wrapper.querySelector('.gallery-slides, .detail-gallery-slides');
+  if (!slides) return;
+  const slideEls = Array.from(slides.children);
+  if (slideEls.length <= 1) return;
+  let current = 0;
+  const dots = Array.from(wrapper.querySelectorAll('.gallery-dot'));
+  const prev = wrapper.querySelector('.gallery-prev');
+  const next = wrapper.querySelector('.gallery-next');
+  function goTo(idx) {
+    current = ((idx % slideEls.length) + slideEls.length) % slideEls.length;
+    slides.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+  }
+  dots.forEach((d, i) => d.addEventListener('click', function(e) { e.stopPropagation(); goTo(i); }));
+  if (prev) prev.addEventListener('click', function(e) { e.stopPropagation(); goTo(current - 1); });
+  if (next) next.addEventListener('click', function(e) { e.stopPropagation(); goTo(current + 1); });
+}
+
 (function () {
+  /* ── Dot grids ── */
+  document.querySelectorAll('.dot-grid[data-total]').forEach(function(el) {
+    var fill = parseInt(el.dataset.fill, 10);
+    var total = parseInt(el.dataset.total, 10);
+    var overflow = el.dataset.overflow === 'true';
+    for (var i = 0; i < total; i++) {
+      var d = document.createElement('span');
+      d.className = 'dot' + (i < fill ? (overflow ? ' overflow' : ' on') : '');
+      el.appendChild(d);
+    }
+    if (overflow) {
+      var plus = document.createElement('span');
+      plus.style.cssText = 'font-size:.7rem;font-weight:800;color:var(--accent-deep);align-self:center;margin-left:2px';
+      plus.textContent = '+';
+      el.appendChild(plus);
+    }
+  });
+
+  /* ── Tab switching ── */
   const tabButtons = Array.from(document.querySelectorAll('.tab-btn'));
   const tabPanels = Array.from(document.querySelectorAll('.tab-panel'));
-  const contactForm = document.getElementById('contact-form');
 
   function activateTab(name) {
     tabButtons.forEach((button) => button.classList.toggle('is-active', button.dataset.tab === name));
@@ -182,10 +713,10 @@ function initTimelineInteractions(root) {
     button.addEventListener('click', () => activateTab(button.dataset.tab));
   });
 
-  // Sub-tabs (Projects)
+  /* ── Sub-tabs (Projects + Imprint) ── */
   document.querySelectorAll('.subtab-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
-      const parent = btn.closest('.tab-panel');
+      const parent = btn.closest('.content-card, .tab-panel');
       const target = btn.dataset.subtab;
       parent.querySelectorAll('.subtab-btn').forEach((b) => b.classList.toggle('is-active', b === btn));
       parent.querySelectorAll('.subtab-panel').forEach((p) => p.classList.toggle('is-active', p.dataset.subpanel === target));
@@ -194,6 +725,26 @@ function initTimelineInteractions(root) {
 
   initTimelineInteractions(document);
 
+  /* ── Gallery init — all timeline cards and detail modals ── */
+  document.querySelectorAll('.dneg-media-gallery, .detail-gallery').forEach(initGalleryEl);
+
+  /* ── Species card clicks ── */
+  document.querySelectorAll('.species-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var modal = document.getElementById('sm-' + card.dataset.species);
+      if (modal) modal.classList.add('open');
+    });
+  });
+
+  /* ── Click outside to close species modals ── */
+  document.querySelectorAll('.species-modal').forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) modal.classList.remove('open');
+    });
+  });
+
+  /* ── Contact form ── */
+  const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -219,10 +770,14 @@ function initTimelineInteractions(root) {
     });
   }
 
+  /* ── ESC key ── */
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
     document.querySelectorAll('.detail-modal').forEach((modal) => {
       modal.style.display = 'none';
+    });
+    document.querySelectorAll('.species-modal.open').forEach((modal) => {
+      modal.classList.remove('open');
     });
   });
 })();

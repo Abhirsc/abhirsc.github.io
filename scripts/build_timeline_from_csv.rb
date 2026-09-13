@@ -19,8 +19,46 @@ def normalize_image_path(path)
   value = path.to_s.strip
   return value if value.empty?
   return value if value.start_with?("http://", "https://", "/", "./", "../")
-
   "./#{value}"
+end
+
+def gallery_html(image_paths, id_prefix)
+  slides_id = "slides-#{id_prefix}"
+  html = +"<div class=\"dneg-media-gallery\" id=\"gallery-#{id_prefix}\">\n"
+  html << "  <div class=\"gallery-slides\" id=\"#{slides_id}\">\n"
+  image_paths.each do |img|
+    html << "    <img class=\"gallery-slide\" src=\"#{CGI.escapeHTML(img)}\" alt=\"\" loading=\"lazy\" />\n"
+  end
+  html << "  </div>\n"
+  html << "  <div class=\"gallery-controls\">\n"
+  html << "    <button class=\"gallery-prev\" aria-label=\"Previous\">&#8249;</button>\n"
+  image_paths.each_with_index do |_, i|
+    active = i.zero? ? " is-active" : ""
+    html << "    <button class=\"gallery-dot#{active}\" data-idx=\"#{i}\"></button>\n"
+  end
+  html << "    <button class=\"gallery-next\" aria-label=\"Next\">&#8250;</button>\n"
+  html << "  </div>\n"
+  html << "</div>\n"
+  html
+end
+
+def detail_gallery_html(image_paths, id_prefix)
+  html = +"<div class=\"detail-gallery\" id=\"dgallery-#{id_prefix}\">\n"
+  html << "  <div class=\"detail-gallery-slides\" id=\"dslides-#{id_prefix}\">\n"
+  image_paths.each do |img|
+    html << "    <img class=\"detail-gallery-slide\" src=\"#{CGI.escapeHTML(img)}\" alt=\"\" loading=\"lazy\" style=\"object-fit:cover;width:100%;height:100%\" />\n"
+  end
+  html << "  </div>\n"
+  html << "  <div class=\"detail-gallery-controls\">\n"
+  html << "    <button class=\"gallery-prev\">&#8249;</button>\n"
+  image_paths.each_with_index do |_, i|
+    active = i.zero? ? " is-active" : ""
+    html << "    <button class=\"gallery-dot#{active}\" data-idx=\"#{i}\"></button>\n"
+  end
+  html << "    <button class=\"gallery-next\">&#8250;</button>\n"
+  html << "  </div>\n"
+  html << "</div>\n"
+  html
 end
 
 html = +""
@@ -37,23 +75,38 @@ html << "  </aside>\n"
 html << "  <main class=\"dneg-content\" id=\"timeline\">\n"
 
 rows.each do |row|
-  year = CGI.escapeHTML(row["year"].to_s)
-  title = CGI.escapeHTML(row["title"].to_s)
-  period = CGI.escapeHTML(row["period"].to_s)
-  preview = CGI.escapeHTML(row["preview"].to_s)
-  detail = CGI.escapeHTML(row["detail"].to_s).gsub("\n", "<br>\n      ")
-  image = CGI.escapeHTML(normalize_image_path(row["image"]))
-  alt = CGI.escapeHTML(row["alt"].to_s)
-  link = row["link"].to_s.strip
+  year      = CGI.escapeHTML(row["year"].to_s)
+  title     = CGI.escapeHTML(row["title"].to_s)
+  period    = CGI.escapeHTML(row["period"].to_s)
+  preview   = CGI.escapeHTML(row["preview"].to_s)
+  detail    = CGI.escapeHTML(row["detail"].to_s).gsub("\n", "<br>\n      ")
+  image     = CGI.escapeHTML(normalize_image_path(row["image"]))
+  alt       = CGI.escapeHTML(row["alt"].to_s)
+  link      = row["link"].to_s.strip
   detail_id = "detail-#{year}"
 
-  link_html = link.empty? ? "" : "\n          <a class=\"detail-link\" href=\"#{CGI.escapeHTML(link)}\" target=\"_blank\" rel=\"noopener\">Visit Website ↗</a>"
+  # Parse multi-image column
+  images_raw = row["images"].to_s.strip
+  image_paths = images_raw.empty? ? [] : images_raw.split("|").map { |p| CGI.escapeHTML(normalize_image_path(p.strip)) }
+  multi = image_paths.length > 1
+
+  link_html = link.empty? ? "" : "\n          <a class=\"detail-link\" href=\"#{CGI.escapeHTML(link)}\" target=\"_blank\" rel=\"noopener\">Visit Website &#8599;</a>"
+
+  # Card media section
+  if multi
+    card_media = gallery_html(image_paths, year).lines.map { |l| "          #{l}" }.join
+    modal_media = detail_gallery_html(image_paths, year).lines.map { |l| "          #{l}" }.join
+  else
+    img_src = image_paths.first || image
+    card_media = "          <div class=\"dneg-media\"><img src=\"#{img_src}\" alt=\"#{alt}\" class=\"dneg-img\" /></div>\n"
+    modal_media = ""
+  end
 
   html << <<~HTML
       <section class="dneg-year-block" id="y-#{year}" data-year="#{year}">
         <div class="dneg-divider"><span class="dneg-divider-line"></span><span class="dneg-divider-year">#{year}</span><span class="dneg-divider-line"></span></div>
         <article class="dneg-card dneg-card-clickable" data-detail="#{detail_id}" role="button" tabindex="0" aria-controls="#{detail_id}" aria-label="Open #{year} details">
-          <div class="dneg-media"><img src="#{image}" alt="#{alt}" class="dneg-img" /></div>
+  #{card_media.chomp}
           <div class="dneg-copy">
             <h3>#{title}</h3>
             <p class="dneg-kicker">#{period}</p>
@@ -67,6 +120,7 @@ rows.each do |row|
           <button class="detail-close" type="button" onclick="forceCloseDetailModal('#{detail_id}')" aria-label="Close details">&times;</button>
           <h3 id="detail-title-#{year}">#{title}</h3>
           <p class="dneg-kicker">#{period}</p>
+  #{modal_media.chomp}
           <p>#{detail}</p>#{link_html}
         </div>
       </div>
