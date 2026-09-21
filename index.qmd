@@ -354,6 +354,15 @@ css: styles.v2.css
         </div>
       </button>
 
+      <button class="species-card" data-species="tiger-mosquito" style="--thumb-bg:rgba(160,30,30,.08)">
+        <div class="species-thumb"><img src="images/species/tm.jpeg" alt="Tiger Mosquito" onerror="this.style.display='none'"><span class="sp-emoji">&#129302;</span></div>
+        <div class="species-info">
+          <span class="species-common">Tiger Mosquito</span>
+          <span class="species-scientific">Aedes aegypti</span>
+          <span class="taxonomy-badge tx-invasive">Disease Vector</span>
+        </div>
+      </button>
+
       <button class="species-card" data-species="ne-tree-frog" style="--thumb-bg:rgba(30,120,70,.1)">
         <div class="species-thumb"><img src="images/species/netf.jpeg" alt="New England Tree Frog" onerror="this.style.display='none'"><span class="sp-emoji">&#129436;</span></div>
         <div class="species-info">
@@ -539,7 +548,7 @@ css: styles.v2.css
     <h3>Gossia</h3>
     <p class="sci">Gossia spp.</p>
     <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
-    <p>[Add research context here — Gossia is a genus of rainforest myrtles; some species are critically endangered in SEQ. Survey, modelling, or trait data involvement?]</p>
+    <p><em>Gossia</em> is a genus of rainforest myrtles (family Myrtaceae) with several species listed as critically endangered in south-east Queensland. Work involved trait-based analysis and species distribution data as part of the Functional Ecology Analyst role at Griffith University, drawing on AusTraits and allied datasets to characterise trait–environment relationships for conservation planning. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7327975366763905025/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn post &#8599;</a></p>
   </div>
 </div>
 
@@ -550,7 +559,7 @@ css: styles.v2.css
     <h3>Plains Wanderer</h3>
     <p class="sci">Pedionomus torquatus</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <p>Critically endangered and one of Australia's most enigmatic grassland birds — so evolutionarily distinct it occupies its own family, Pedionomidae. Dependent on native grassland with sparse, patchy ground cover that is rapidly disappearing to cropping and pasture improvement. [Add research context — survey, indicator workflow, or SDM involvement.]</p>
+    <p>Critically endangered and one of Australia's most enigmatic grassland birds — so evolutionarily distinct it occupies its own family, Pedionomidae. Dependent on native grassland with sparse, patchy ground cover that is rapidly disappearing to cropping and pasture improvement. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7353563250225000449/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn post &#8599;</a></p>
   </div>
 </div>
 
@@ -562,6 +571,17 @@ css: styles.v2.css
     <p class="sci">Tyto tenebricosa</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
     <p>EcoCommons species distribution models were used alongside the Superb Lyrebird to assess the impact of the 2019–20 Black Summer bushfires on Greater Sooty Owl habitat across south-eastern Australia. A large, specialist predator of old-growth forest, the owl is highly sensitive to fire intensity and hollow loss — making it a reliable indicator of old-growth forest condition. These SDM outputs were cited as a key real-world conservation outcome contributing to the EcoCommons team's 2026 Eureka Prize win.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-tiger-mosquito">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('tiger-mosquito')">&times;</button>
+    <img class="species-panel-img" src="images/species/tm.jpeg" alt="Tiger Mosquito" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129302;</span>
+    <h3>Tiger Mosquito</h3>
+    <p class="sci">Aedes aegypti</p>
+    <span class="taxonomy-badge tx-invasive" style="margin-bottom:.9rem;display:inline-block">Disease Vector</span>
+    <p>Use Case 2 from the EcoCommons SDM Workshop Series — Habitat Study: Managing Disease Spread. Species distribution modelling applied to a disease-vector species to identify suitable habitat and predict potential spread under current and future conditions. Demonstrates how SDM tools extend beyond wildlife conservation to biosecurity and public health contexts: mapping where mosquito populations are likely to establish or expand helps prioritise surveillance, targeted control, and policy interventions. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7322872913399840796/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn post &#8599;</a></p>
   </div>
 </div>
 
