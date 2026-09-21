@@ -354,6 +354,15 @@ css: styles.v2.css
         </div>
       </button>
 
+      <button class="species-card" data-species="ne-tree-frog" style="--thumb-bg:rgba(30,120,70,.1)">
+        <div class="species-thumb"><img src="images/species/netf.jpeg" alt="New England Tree Frog" onerror="this.style.display='none'"><span class="sp-emoji">&#129436;</span></div>
+        <div class="species-info">
+          <span class="species-common">New England Tree Frog</span>
+          <span class="species-scientific">Ranoidea subglandulosa</span>
+          <span class="taxonomy-badge tx-reptile">Amphibian</span>
+        </div>
+      </button>
+
     </div>
   </section>
 </section>
@@ -414,7 +423,7 @@ css: styles.v2.css
     <h3>Noisy Miner</h3>
     <p class="sci">Manorina melanocephala</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <p>A native honeyeater that has become functionally overabundant in degraded woodland edges, where it aggressively excludes smaller insectivores. Noisy Miner dominance is a recognised indicator of woodland decline and was tracked across survey sites as part of bird community assessments — high densities flagging habitats requiring structural restoration to support functional biodiversity.</p>
+    <p>A native honeyeater that has become functionally overabundant in degraded woodland edges, where it aggressively excludes smaller insectivores. The Capertee Valley (NSW) is a key case: Noisy Miner dominance across cleared woodland fragments suppresses Regent Honeyeater recovery by outcompeting them at nectar resources and denning sites — a paradox where a native species becomes a conservation threat. Noisy Miner density was analysed as part of bird community competition assessments, with high densities flagging habitats requiring structural restoration to support functional biodiversity. [Presentation link to follow.]</p>
   </div>
 </div>
 
@@ -425,7 +434,7 @@ css: styles.v2.css
     <h3>Regent Honeyeater</h3>
     <p class="sci">Anthochaera phrygia</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <p>Critically endangered woodland bird — fewer than 350–500 individuals remain across roughly 600,000 km&#178; of fragmented habitat in south-eastern Australia, making it one of the rarest songbirds on Earth. The species has lost its song culture in captivity, raising concern about recovery viability. [Add specific research output or dataset link here.]</p>
+    <p>Critically endangered woodland bird — fewer than 350–500 individuals estimated remaining, making it one of the rarest songbirds in Australia. The Capertee Valley (NSW) holds the largest known population and is central to its recovery, but Noisy Miner competition in degraded woodland edges remains a key pressure alongside habitat loss. The species has also lost song culture in captivity. Use case analysis focused on understanding competition dynamics and priority habitat patches in the Capertee Valley — modelling both the Regent Honeyeater's habitat requirements and Noisy Miner density as a co-occurring pressure layer. [Presentation link to follow.]</p>
   </div>
 </div>
 
@@ -436,7 +445,7 @@ css: styles.v2.css
     <h3>Richmond Birdwing</h3>
     <p class="sci">Ornithoptera richmondia</p>
     <span class="taxonomy-badge tx-insect" style="margin-bottom:.9rem;display:inline-block">Insect</span>
-    <p>One of Australia's largest butterflies, restricted to a narrow corridor of subtropical rainforest in south-east Queensland. Critically threatened by the invasive Dutchman's Pipe vine (<em>Aristolochia elegans</em>) — a toxic look-alike of the larval host plant that lures females to lay eggs on a plant that kills their caterpillars. Weed management and habitat restoration are essential for recovery. [Add specific research output or dataset link here.]</p>
+    <p>One of Australia's largest butterflies, restricted to a narrow corridor of subtropical rainforest in south-east Queensland. The Richmond Birdwing depends on Richmond Birdwing Vine (<em>Pararistolochia praevenosa</em>) as its sole larval host plant — a native climber also restricted to the same range. The invasive Dutchman's Pipe vine (<em>Aristolochia elegans</em>) is a toxic look-alike that lures females to lay eggs on a plant that kills their caterpillars, compounding pressure from host plant decline and habitat fragmentation. Use case work explored the spatial overlap between the butterfly's known range, host plant distribution, and the invasive vine — informing weed management prioritisation and assisted revegetation for host plant recovery. [Presentation link to follow.]</p>
   </div>
 </div>
 
@@ -447,7 +456,7 @@ css: styles.v2.css
     <h3>Superb Lyrebird</h3>
     <p class="sci">Menura novaehollandiae</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <p>EcoCommons species distribution models were used to assess the impact of the 2019–20 Black Summer bushfires on Superb Lyrebird and Greater Sooty Owl habitat — estimating what proportion of suitable range was burnt across south-eastern Australia and modelling recovery trajectories. These outputs were cited as key examples of EcoCommons' real-world conservation utility and contributed to the platform's 2026 Eureka Prize win. The lyrebird is also an ecosystem engineer; its scratching and digging cycles nutrients and shapes understorey structure, so its post-fire decline has cascading effects on forest regeneration.</p>
+    <p>EcoCommons species distribution models were used to assess the impact of the 2019–20 Black Summer bushfires on Superb Lyrebird and Greater Sooty Owl habitat — estimating what proportion of suitable range was burnt and modelling recovery trajectories across south-eastern Australia. These outputs were cited as key examples of EcoCommons' real-world conservation utility and contributed to the platform's 2026 Eureka Prize win. The lyrebird is also an ecosystem engineer; its scratching and digging cycles nutrients and shapes understorey structure, so its post-fire decline has cascading effects on forest regeneration. A separate research angle explored the nesting relationship between Superb Lyrebirds and Lantana thickets — ground-dwelling birds often utilise dense Lantana as nesting cover in degraded habitats, creating a management paradox: blanket Lantana removal can temporarily eliminate nesting infrastructure before native structural cover regenerates. Assisted revegetation to provide equivalent native ground cover is an important component of restoration design. [Presentation link to follow.]</p>
   </div>
 </div>
 
@@ -458,7 +467,7 @@ css: styles.v2.css
     <h3>Lantana</h3>
     <p class="sci">Lantana camara</p>
     <span class="taxonomy-badge tx-invasive" style="margin-bottom:.9rem;display:inline-block">Invasive</span>
-    <p>One of the world's worst invasive plant species — a dense flowering shrub that forms impenetrable thickets, suppresses native understorey, and degrades habitat for ground-dwelling fauna. Mapped and modelled as part of weed-impact assessments; distribution data used alongside native species SDMs to prioritise management interventions in subtropical Queensland restoration projects.</p>
+    <p>One of the world's worst invasive plant species — a dense flowering shrub that forms impenetrable thickets, suppresses native understorey, and degrades habitat for ground-dwelling fauna. Distribution data was used alongside native species SDMs to prioritise weed management interventions in subtropical Queensland restoration projects. The management story is ecologically nuanced: Lantana thickets, while destructive at landscape scale, can provide temporary nesting and shelter cover for ground-dwelling birds such as lyrebirds in degraded habitats where native structural cover has been lost. Effective restoration involves targeted Lantana removal paired with assisted revegetation of native shrub equivalents, so ground-nesting species are not left exposed. [Presentation link to follow.]</p>
   </div>
 </div>
 
@@ -469,7 +478,16 @@ css: styles.v2.css
     <h3>ACT Threatened Species</h3>
     <p class="sci">Multiple spp.</p>
     <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
-    <p>Ecological indicator workflows developed with QCIF and partners drew on monitoring datasets spanning multiple threatened species listed under the ACT Nature Conservation Act. [Add specific species groups, projects, or NatureMap context here.]</p>
+    <p>Six live use cases were developed and demonstrated at the ACT Government SDM Workshop (April 2023), showing how EcoCommons MaxEnt models can address real conservation questions in the ACT and Namadgi National Park:</p>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Purple Copper Butterfly</strong> (<em>Paralucia spinifera</em>) — mapping suitable habitat to inform management; host plant Native Blackthorn (<em>Bursaria spinosa</em>) included as an environmental layer; Namadgi NP study area</li>
+      <li><strong>Koala</strong> (<em>Phascolarctos cinereus</em>) — modelling potential habitat to guide acoustic sensor deployment for population monitoring in ACT forests</li>
+      <li><strong>Greater Glider</strong> (<em>Petauroides volans</em>) — habitat modelling to inform prescribed burn impact studies in Namadgi NP; extended with fire loading data from data.gov.au to assess vulnerability of 2020 fire-affected areas</li>
+      <li><strong>Canberra Golden Sun Moth</strong> (<em>Synemon plana</em>) — assessing persistence of populations in natural temperate grasslands under climate change scenarios; restricted to wallaby grass–dominated grasslands</li>
+      <li><strong>Canberra Spider Orchid</strong> (<em>Arachnorchis actensis</em>) — finding new populations and identifying translocation sites; restricted to Mt Ainslie and Mt Majura; highly sensitive to disturbance and climate</li>
+    </ul>
+    <p>Additional threatened species modelled in separate EcoCommons use case presentations: <strong>Greater Bilby</strong> (<em>Macrotis lagotis</em>), <strong>Armoured Mistfrog</strong> (<em>Litoria lorica</em>), <strong>Northern Hairy-nosed Wombat</strong> (<em>Lasiorhinus krefftii</em>), and <strong>Nangur Spiny Skink</strong> (<em>Nangura spinosa</em>) — all run at QLD scale using MaxEnt, GBM, RF, and ANN algorithms to compare model performance.</p>
+    <p style="font-size:.9rem;color:var(--muted-strong)">Presentation: SDM Workshop ACT Government, April 2023 · EcoCommons platform workshop series. [Zenodo DOIs to follow.]</p>
   </div>
 </div>
 
@@ -491,7 +509,15 @@ css: styles.v2.css
     <h3>Migratory Birds</h3>
     <p class="sci">Multiple spp.</p>
     <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
-    <p>Migratory species modelling — see the <code>getting_started_with_migratory_modelling</code> repository. Migratory birds using the East Asian–Australasian Flyway face pressures at every stopover: habitat loss, climate-driven phenology mismatches, and loss of intertidal feeding areas. Distribution models help identify which stopover sites are most critical and most at risk. [Add specific species groups or outputs here.]</p>
+    <p>Two related use cases on the East Australasian Flyway, developed for the EcoCommons platform workshop series:</p>
+    <p><strong>Use Case 3a — Avian Influenza Precautionary Study:</strong> SDMs used to model the distribution of migratory shorebirds as potential vectors for Highly Pathogenic Avian Influenza (HPAI) along the flyway, identifying high-risk staging site overlaps. Species modelled:</p>
+    <ul style="margin:.4rem 0 .8rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Curlew Sandpiper</strong> (<em>Calidris ferruginea</em>) — three subspecies represented in presentation; key Yellow Sea and NW Australian staging sites</li>
+      <li><strong>Great Knot</strong> (<em>Calidris tenuirostris</em>) — critically endangered; habitat loss from reclamation along the Yellow Sea flyway</li>
+      <li><strong>Bar-tailed Godwit</strong> (<em>Limosa lapponica</em>) — longest non-stop migratory flight (Alaska–New Zealand); staging habitat vulnerability</li>
+    </ul>
+    <p><strong>Use Case 3b — Seasonal Distribution Shifts:</strong> Temporal modelling showing Bar-tailed Godwit distribution across months (January vs June) to capture movement patterns and seasonal habitat use along the flyway.</p>
+    <p>Migratory modelling workflow also published as an open GitHub starter kit: <code>getting_started_with_migratory_modelling</code>. <span style="font-size:.9rem;color:var(--muted-strong)">Presentation: EcoCommons SDM Workshop Series. [LinkedIn post + Zenodo DOI to follow.]</span></p>
   </div>
 </div>
 
@@ -502,7 +528,7 @@ css: styles.v2.css
     <h3>Mangroves (Singapore)</h3>
     <p class="sci">Multiple spp.</p>
     <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
-    <p>[Add research context here — Singapore mangrove survey, restoration, or remote sensing work.]</p>
+    <p>Distribution analysis to identify suitable mangrove plantation sites for a blue carbon project with the Tropical Marine Science Institute (TMSI), National University of Singapore. Mapping mangrove extent and identifying candidate restoration and plantation locations using SDM approaches to inform site selection for blue carbon sequestration interventions. [LinkedIn post and link to follow.]</p>
   </div>
 </div>
 
@@ -536,6 +562,17 @@ css: styles.v2.css
     <p class="sci">Tyto tenebricosa</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
     <p>EcoCommons species distribution models were used alongside the Superb Lyrebird to assess the impact of the 2019–20 Black Summer bushfires on Greater Sooty Owl habitat across south-eastern Australia. A large, specialist predator of old-growth forest, the owl is highly sensitive to fire intensity and hollow loss — making it a reliable indicator of old-growth forest condition. These SDM outputs were cited as a key real-world conservation outcome contributing to the EcoCommons team's 2026 Eureka Prize win.</p>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-ne-tree-frog">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('ne-tree-frog')">&times;</button>
+    <img class="species-panel-img" src="images/species/netf.jpeg" alt="New England Tree Frog" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129436;</span>
+    <h3>New England Tree Frog</h3>
+    <p class="sci">Ranoidea subglandulosa</p>
+    <span class="taxonomy-badge tx-reptile" style="margin-bottom:.9rem;display:inline-block">Amphibian</span>
+    <p>Range shift analysis use case developed for the EcoCommons platform workshop series — Use Case 4: Range Shift Analysis. MaxEnt models were used at NSW and South East Australia scale to compare current distribution against projected future distribution under climate change scenarios, demonstrating how EcoCommons supports range shift and extinction risk analyses for data-limited species. The New England Tree Frog (also known as the Glandular Tree Frog) is an endemic species restricted to highland stream habitats in northern NSW. <span style="font-size:.9rem;color:var(--muted-strong)">Presentation: EcoCommons SDM Workshop Series. [Zenodo DOI to follow.]</span></p>
   </div>
 </div>
 
