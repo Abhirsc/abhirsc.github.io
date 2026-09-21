@@ -19,13 +19,19 @@ Data & Spatial,Reproducible Workflows
 Data & Spatial,Data Pipeline Design
 Data & Spatial,Ecological Indicator Development
 Data & Spatial,Carbon Density Modelling
-Platforms & Tools,EcoCommons / BCCVL
-Platforms & Tools,AusTraits
-Platforms & Tools,QGIS / ArcGIS
-Platforms & Tools,Quarto
-Platforms & Tools,GitHub Actions
-Platforms & Tools,HuggingFace Spaces
-Platforms & Tools,MaxEnt
+Platforms & Tools,EcoCommons/BCCVL
+Platforms & Tools,AusTraits/Galah/IMOS/OBIS/GBIF/eBird/iNaturalist
+Platforms & Tools,QGIS/ArcGIS/Mapinfo
+Platforms & Tools,Quarto/Jupyter
+Platforms & Tools,GitHub Actions/Gitlab CI/CD
+Platforms & Tools,Rstudio/VS Code/Brew
+Platforms & Tools,HuggingFace Spaces/Posit Cloud/NCI-HPC
+Platforms & Tools,MaxEnt/BIOMOD2/SDMtoolbox/Wallace
+Platforms & Tools,GLM/Boosted Regression Trees/Random Forests
+Platforms & Tools,HuggingFace Spaces/Posit Cloud/NCI-HPC
+Platforms & Tools,Selinium/Cucumber/Playwright/Keycloak/Nextflow/Django
+Platforms & Tools,Vision6/Tally/Freshdesk/Usersnap/LinkedIn/Slack/Microsoft/Apple
+
 Communication & Engagement,Science Communication
 Communication & Engagement,Open Science
 Communication & Engagement,Policy & Decision Support
@@ -33,6 +39,9 @@ Communication & Engagement,Community Engagement
 Communication & Engagement,Environmental Education
 Communication & Engagement,Workshop Facilitation
 Communication & Engagement,Citizen Science
+Communication & Engagement,Stakeholder Consultation
+Communication & Engagement,Newsletter & LinkedIn Pages
+
 Creative,Nature Photography
 Creative,Music Composition
 Creative,Field Recording
