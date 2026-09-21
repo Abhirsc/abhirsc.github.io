@@ -1387,7 +1387,7 @@ body{
   display: flex; align-items: center; justify-content: center;
   background: var(--paper-deep);
 }
-.detail-gallery-slide img { object-fit: contain !important; width: 100%; height: 100%; }
+#dgallery-2026 .detail-gallery-slide img { object-fit: contain; width: 100%; height: 100%; }
 .detail-gallery-controls {
   position: absolute; bottom: .55rem; left: 50%; transform: translateX(-50%);
   display: flex; gap: .45rem; align-items: center;

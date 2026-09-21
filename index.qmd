@@ -65,6 +65,9 @@ css: styles.v2.css
     <button class="subtab-btn" type="button" data-subtab="personal">Personal</button>
   </nav>
 {{< include _generated/projects.html >}}
+  <footer class="button-container bottom-links" aria-label="Download resume">
+    <a class="download-button download-button-wide" href="resume.pdf">Download Resume</a>
+  </footer>
 </section>
 
 <!-- ── IMPRINT (renamed from Idea-Blogs) ── -->
@@ -198,6 +201,9 @@ css: styles.v2.css
       </div>
     </div>
   </section>
+  <footer class="button-container bottom-links" aria-label="Download resume">
+    <a class="download-button download-button-wide" href="resume.pdf">Download Resume</a>
+  </footer>
 </section>
 
 <!-- ── IMPACT (renamed from Details) ── -->
@@ -362,6 +368,9 @@ css: styles.v2.css
 
     </div>
   </section>
+  <footer class="button-container bottom-links" aria-label="Download resume">
+    <a class="download-button download-button-wide" href="resume.pdf">Download Resume</a>
+  </footer>
 </section>
 
 <!-- ── CONTACT ── -->
@@ -388,6 +397,9 @@ css: styles.v2.css
       <button class="download-button" type="submit">Send Enquiry</button>
     </form>
   </section>
+  <footer class="button-container bottom-links" aria-label="Download resume">
+    <a class="download-button download-button-wide" href="resume.pdf">Download Resume</a>
+  </footer>
 </section>
 
 <!-- ── Species modals ── -->
