@@ -38,6 +38,9 @@ css: styles.v2.css
     <p style="font-size:.82rem;color:var(--muted-strong);margin:-.3rem 0 1rem">Maintained in <code>data/skills.csv</code> — add a row with <code>category</code> + <code>skill</code> columns and rebuild to update.</p>
 {{< include _generated/skills.html >}}
   </section>
+  <footer class="button-container bottom-links" aria-label="Download resume">
+    <a class="download-button download-button-wide" href="resume.pdf">Download Resume</a>
+  </footer>
 </section>
 
 <!-- ── TIMELINE ── -->
@@ -77,7 +80,7 @@ css: styles.v2.css
       <button class="subtab-btn is-active" type="button" data-subtab="interviews">Interviews &amp; News</button>
       <button class="subtab-btn" type="button" data-subtab="certs">Certificates &amp; Awards</button>
       <button class="subtab-btn" type="button" data-subtab="pubs">Publications &amp; Research</button>
-      <button class="subtab-btn" type="button" data-subtab="presentations">Presentations</button>
+      <button class="subtab-btn" type="button" data-subtab="presentations">Presentations &amp; Abstracts</button>
       <button class="subtab-btn" type="button" data-subtab="investor">Investor Portfolio</button>
     </nav>
 
@@ -188,12 +191,12 @@ css: styles.v2.css
 
     <!-- Presentations -->
     <div class="subtab-panel" data-subpanel="presentations">
-      <h2>Conference Presentations</h2>
+      <h2>Presentations &amp; Abstracts</h2>
       <div class="pub-grid">
 
         <a class="pub-card" href="https://zenodo.org/records/22879320" target="_blank" rel="noopener">
           <div>
-            <p class="project-kicker">IWEC 2026 · Zenodo · CC BY 4.0</p>
+            <p class="project-kicker">IWEC 2026 · Zenodo · CC BY 4.0 · <strong>Accepted Abstract</strong></p>
             <h3>Reproducible SDM as a Decision-Support Tool for Invasive Species Management</h3>
           </div>
           <p>Using EcoCommons to build reproducible, decision-ready species distribution model workflows for Lantana camara in India's Western Ghats — habitat suitability mapping and climate projections for early-detection survey planning.</p>

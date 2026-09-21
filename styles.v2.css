@@ -358,7 +358,7 @@ body{
 .download-button{
   display: inline-block;
   padding: .68rem 1.02rem;
-  background-color: var(--accent);
+  background-color: #3d2408;
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
@@ -1390,7 +1390,7 @@ body{
   display: flex; align-items: center; justify-content: center;
   background: var(--paper-deep);
 }
-#dgallery-2026 .detail-gallery-slide img { object-fit: contain; width: 100%; height: 100%; }
+#dgallery-2026 .detail-gallery-slide:first-child img { object-fit: contain; width: 100%; height: 100%; }
 .detail-gallery-controls {
   position: absolute; bottom: .55rem; left: 50%; transform: translateX(-50%);
   display: flex; gap: .45rem; align-items: center;
