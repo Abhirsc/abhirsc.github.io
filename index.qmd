@@ -285,6 +285,114 @@ css: styles.v2.css
 
     <div class="species-grid">
 
+      <button class="species-card" data-species="tiger-mosquito" style="--thumb-bg:rgba(160,30,30,.08)">
+        <div class="species-thumb"><img src="images/species/tm.jpeg" alt="Tiger Mosquito" onerror="this.style.display='none'"><span class="sp-emoji">&#129567;</span></div>
+        <div class="species-info">
+          <span class="species-common">Tiger Mosquito</span>
+          <span class="species-scientific">Aedes aegypti</span>
+          <span class="taxonomy-badge tx-invasive">Disease Vector</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="gossia" style="--thumb-bg:rgba(70,130,60,.1)">
+        <div class="species-thumb"><img src="images/species/gos.jpeg" alt="Gossia" onerror="this.style.display='none'"><span class="sp-emoji">&#127807;</span></div>
+        <div class="species-info">
+          <span class="species-common">Gossia</span>
+          <span class="species-scientific">Gossia punctata</span>
+          <span class="taxonomy-badge tx-plant">Plant</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="plains-wanderer" style="--thumb-bg:rgba(160,130,30,.1)">
+        <div class="species-thumb"><img src="images/species/pw.jpeg" alt="Plains Wanderer" onerror="this.style.display='none'"><span class="sp-emoji">&#129718;</span></div>
+        <div class="species-info">
+          <span class="species-common">Plains Wanderer</span>
+          <span class="species-scientific">Pedionomus torquatus</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="migratory-birds" style="--thumb-bg:rgba(60,110,180,.09)">
+        <div class="species-thumb"><img src="images/species/mb.jpeg" alt="Migratory Birds" onerror="this.style.display='none'"><span class="sp-emoji">&#127759;</span></div>
+        <div class="species-info">
+          <span class="species-common">Migratory Birds</span>
+          <span class="species-scientific">East Australasian Flyway</span>
+          <span class="taxonomy-badge tx-group">Group</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="mangroves-bc" style="--thumb-bg:rgba(20,100,90,.12)">
+        <div class="species-thumb"><img src="images/species/mangrooves.png" alt="Mangroves" onerror="this.style.display='none'"><span class="sp-emoji">&#127754;</span></div>
+        <div class="species-info">
+          <span class="species-common">Mangroves</span>
+          <span class="species-scientific">Avicennia / Rhizophora spp.</span>
+          <span class="taxonomy-badge tx-plant">Plant</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="ne-tree-frog" style="--thumb-bg:rgba(30,120,70,.1)">
+        <div class="species-thumb"><img src="images/species/netf.jpeg" alt="New England Tree Frog" onerror="this.style.display='none'"><span class="sp-emoji">&#128056;</span></div>
+        <div class="species-info">
+          <span class="species-common">New England Tree Frog</span>
+          <span class="species-scientific">Ranoidea subglandulosa</span>
+          <span class="taxonomy-badge tx-reptile">Amphibian</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="bilby" style="--thumb-bg:rgba(180,140,80,.1)">
+        <div class="species-thumb"><img src="images/species/bilby.jpeg" alt="Greater Bilby" onerror="this.style.display='none'"><span class="sp-emoji">&#128007;</span></div>
+        <div class="species-info">
+          <span class="species-common">Greater Bilby</span>
+          <span class="species-scientific">Macrotis lagotis</span>
+          <span class="taxonomy-badge tx-mammal">Mammal</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="armed-mistfrog" style="--thumb-bg:rgba(30,110,60,.1)">
+        <div class="species-thumb"><img src="images/species/mistfrog.jpeg" alt="Armoured Mistfrog" onerror="this.style.display='none'"><span class="sp-emoji">&#128056;</span></div>
+        <div class="species-info">
+          <span class="species-common">Armoured Mistfrog</span>
+          <span class="species-scientific">Litoria lorica</span>
+          <span class="taxonomy-badge tx-reptile">Amphibian</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="hairy-nosed-wombat" style="--thumb-bg:rgba(120,90,50,.1)">
+        <div class="species-thumb"><img src="images/species/wombat.jpeg" alt="Northern Hairy-nosed Wombat" onerror="this.style.display='none'"><span class="sp-emoji">&#128059;</span></div>
+        <div class="species-info">
+          <span class="species-common">Northern Hairy-nosed Wombat</span>
+          <span class="species-scientific">Lasiorhinus krefftii</span>
+          <span class="taxonomy-badge tx-mammal">Mammal</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="nangur-skink" style="--thumb-bg:rgba(90,120,40,.1)">
+        <div class="species-thumb"><img src="images/species/skink.jpeg" alt="Nangur Spiny Skink" onerror="this.style.display='none'"><span class="sp-emoji">&#129422;</span></div>
+        <div class="species-info">
+          <span class="species-common">Nangur Spiny Skink</span>
+          <span class="species-scientific">Nangura spinosa</span>
+          <span class="taxonomy-badge tx-reptile">Reptile</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="bar-tailed-godwit" style="--thumb-bg:rgba(60,100,160,.1)">
+        <div class="species-thumb"><img src="images/species/godwit.jpeg" alt="Bar-tailed Godwit" onerror="this.style.display='none'"><span class="sp-emoji">&#129415;</span></div>
+        <div class="species-info">
+          <span class="species-common">Bar-tailed Godwit</span>
+          <span class="species-scientific">Limosa lapponica</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="spider-orchid" style="--thumb-bg:rgba(200,100,140,.09)">
+        <div class="species-thumb"><img src="images/species/orchid.jpeg" alt="Canberra Spider Orchid" onerror="this.style.display='none'"><span class="sp-emoji">&#127801;</span></div>
+        <div class="species-info">
+          <span class="species-common">Canberra Spider Orchid</span>
+          <span class="species-scientific">Arachnorchis actensis</span>
+          <span class="taxonomy-badge tx-plant">Plant</span>
+        </div>
+      </button>
+
       <button class="species-card" data-species="greater-glider" style="--thumb-bg:rgba(140,90,30,.12)">
         <div class="species-thumb"><img src="images/species/gl.jpeg" alt="Greater Glider" onerror="this.style.display='none'"><span class="sp-emoji">&#127769;</span></div>
         <div class="species-info">
@@ -294,12 +402,39 @@ css: styles.v2.css
         </div>
       </button>
 
-      <button class="species-card" data-species="ebb" style="--thumb-bg:rgba(50,100,60,.12)">
-        <div class="species-thumb"><img src="images/species/ebb.jpeg" alt="Eastern Bristlebird" onerror="this.style.display='none'"><span class="sp-emoji">&#129413;</span></div>
+      <button class="species-card" data-species="golden-sun-moth" style="--thumb-bg:rgba(220,170,20,.09)">
+        <div class="species-thumb"><img src="images/species/sunmoth.jpeg" alt="Canberra Golden Sun Moth" onerror="this.style.display='none'"><span class="sp-emoji">&#128256;</span></div>
         <div class="species-info">
-          <span class="species-common">Eastern Bristlebird</span>
-          <span class="species-scientific">Dasyornis brachypterus</span>
-          <span class="taxonomy-badge tx-bird">Bird</span>
+          <span class="species-common">Canberra Golden Sun Moth</span>
+          <span class="species-scientific">Synemon plana</span>
+          <span class="taxonomy-badge tx-insect">Insect</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="purple-copper" style="--thumb-bg:rgba(140,50,170,.09)">
+        <div class="species-thumb"><img src="images/species/copper.jpeg" alt="Purple Copper Butterfly" onerror="this.style.display='none'"><span class="sp-emoji">&#129419;</span></div>
+        <div class="species-info">
+          <span class="species-common">Purple Copper Butterfly</span>
+          <span class="species-scientific">Paralucia spinifera</span>
+          <span class="taxonomy-badge tx-insect">Insect</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="koala" style="--thumb-bg:rgba(90,90,90,.08)">
+        <div class="species-thumb"><img src="images/species/koala.png" alt="Koala" onerror="this.style.display='none'"><span class="sp-emoji">&#128040;</span></div>
+        <div class="species-info">
+          <span class="species-common">Koala</span>
+          <span class="species-scientific">Phascolarctos cinereus</span>
+          <span class="taxonomy-badge tx-mammal">Mammal</span>
+        </div>
+      </button>
+
+      <button class="species-card" data-species="lyrebird" style="--thumb-bg:rgba(50,105,160,.1)">
+        <div class="species-thumb"><img src="images/species/sl.jpeg" alt="Lyrebird &amp; Lantana" onerror="this.style.display='none'"><span class="sp-emoji">&#127925;</span></div>
+        <div class="species-info">
+          <span class="species-common">Lyrebird &amp; Lantana</span>
+          <span class="species-scientific">Menura / Lantana camara</span>
+          <span class="taxonomy-badge tx-bird">Bird · Invasive</span>
         </div>
       </button>
 
@@ -321,6 +456,15 @@ css: styles.v2.css
         </div>
       </button>
 
+      <button class="species-card" data-species="ebb" style="--thumb-bg:rgba(50,100,60,.12)">
+        <div class="species-thumb"><img src="images/species/ebb.jpeg" alt="Eastern Bristlebird" onerror="this.style.display='none'"><span class="sp-emoji">&#129413;</span></div>
+        <div class="species-info">
+          <span class="species-common">Eastern Bristlebird</span>
+          <span class="species-scientific">Dasyornis brachypterus</span>
+          <span class="taxonomy-badge tx-bird">Bird</span>
+        </div>
+      </button>
+
       <button class="species-card" data-species="richmond-birdwing" style="--thumb-bg:rgba(130,50,155,.1)">
         <div class="species-thumb"><img src="images/species/richmond.png" alt="Richmond Birdwing" onerror="this.style.display='none'"><span class="sp-emoji">&#129419;</span></div>
         <div class="species-info">
@@ -330,93 +474,12 @@ css: styles.v2.css
         </div>
       </button>
 
-      <button class="species-card" data-species="lyrebird" style="--thumb-bg:rgba(50,105,160,.1)">
-        <div class="species-thumb"><img src="images/species/sl.jpeg" alt="Superb Lyrebird" onerror="this.style.display='none'"><span class="sp-emoji">&#127925;</span></div>
-        <div class="species-info">
-          <span class="species-common">Superb Lyrebird</span>
-          <span class="species-scientific">Menura novaehollandiae</span>
-          <span class="taxonomy-badge tx-bird">Bird</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="lantana" style="--thumb-bg:rgba(190,50,30,.09)">
-        <div class="species-thumb"><img src="images/species/lan.jpeg" alt="Lantana" onerror="this.style.display='none'"><span class="sp-emoji">&#127802;</span></div>
-        <div class="species-info">
-          <span class="species-common">Lantana</span>
-          <span class="species-scientific">Lantana camara</span>
-          <span class="taxonomy-badge tx-invasive">Invasive</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="act-threatened" style="--thumb-bg:rgba(90,90,90,.08)">
-        <div class="species-thumb"><img src="images/species/koala.png" alt="ACT Threatened Species" onerror="this.style.display='none'"><span class="sp-emoji">&#127956;</span></div>
-        <div class="species-info">
-          <span class="species-common">ACT Threatened Species</span>
-          <span class="species-scientific">Multiple spp.</span>
-          <span class="taxonomy-badge tx-group">Group</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="mangroves-bc" style="--thumb-bg:rgba(20,100,90,.12)">
-        <div class="species-thumb"><img src="images/species/mangrooves.png" alt="Mangroves" onerror="this.style.display='none'"><span class="sp-emoji">&#127754;</span></div>
-        <div class="species-info">
-          <span class="species-common">Mangroves</span>
-          <span class="species-scientific">Avicennia / Rhizophora spp.</span>
-          <span class="taxonomy-badge tx-plant">Plant</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="migratory-birds" style="--thumb-bg:rgba(60,110,180,.09)">
-        <div class="species-thumb"><img src="images/species/mb.jpeg" alt="Migratory Birds" onerror="this.style.display='none'"><span class="sp-emoji">&#127759;</span></div>
-        <div class="species-info">
-          <span class="species-common">Migratory Birds</span>
-          <span class="species-scientific">Multiple spp.</span>
-          <span class="taxonomy-badge tx-group">Group</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="gossia" style="--thumb-bg:rgba(70,130,60,.1)">
-        <div class="species-thumb"><img src="images/species/gos.jpeg" alt="Gossia" onerror="this.style.display='none'"><span class="sp-emoji">&#127807;</span></div>
-        <div class="species-info">
-          <span class="species-common">Gossia</span>
-          <span class="species-scientific">Gossia spp.</span>
-          <span class="taxonomy-badge tx-plant">Plant</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="plains-wanderer" style="--thumb-bg:rgba(160,130,30,.1)">
-        <div class="species-thumb"><img src="images/species/pw.jpeg" alt="Plains Wanderer" onerror="this.style.display='none'"><span class="sp-emoji">&#129718;</span></div>
-        <div class="species-info">
-          <span class="species-common">Plains Wanderer</span>
-          <span class="species-scientific">Pedionomus torquatus</span>
-          <span class="taxonomy-badge tx-bird">Bird</span>
-        </div>
-      </button>
-
       <button class="species-card" data-species="greater-sooty-owl" style="--thumb-bg:rgba(40,40,55,.1)">
         <div class="species-thumb"><img src="images/species/gso.jpeg" alt="Greater Sooty Owl" onerror="this.style.display='none'"><span class="sp-emoji">&#129417;</span></div>
         <div class="species-info">
           <span class="species-common">Greater Sooty Owl</span>
           <span class="species-scientific">Tyto tenebricosa</span>
           <span class="taxonomy-badge tx-bird">Bird</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="tiger-mosquito" style="--thumb-bg:rgba(160,30,30,.08)">
-        <div class="species-thumb"><img src="images/species/tm.jpeg" alt="Tiger Mosquito" onerror="this.style.display='none'"><span class="sp-emoji">&#129567;</span></div>
-        <div class="species-info">
-          <span class="species-common">Tiger Mosquito</span>
-          <span class="species-scientific">Aedes aegypti</span>
-          <span class="taxonomy-badge tx-invasive">Disease Vector</span>
-        </div>
-      </button>
-
-      <button class="species-card" data-species="ne-tree-frog" style="--thumb-bg:rgba(30,120,70,.1)">
-        <div class="species-thumb"><img src="images/species/netf.jpeg" alt="New England Tree Frog" onerror="this.style.display='none'"><span class="sp-emoji">&#128056;</span></div>
-        <div class="species-info">
-          <span class="species-common">New England Tree Frog</span>
-          <span class="species-scientific">Ranoidea subglandulosa</span>
-          <span class="taxonomy-badge tx-reptile">Amphibian</span>
         </div>
       </button>
 
@@ -457,166 +520,19 @@ css: styles.v2.css
 </section>
 
 <!-- ── Species modals ── -->
-<div class="species-modal" id="sm-greater-glider">
+<div class="species-modal" id="sm-tiger-mosquito">
   <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('greater-glider')">&times;</button>
-    <img class="species-panel-img" src="images/species/gl.jpeg" alt="Greater Glider" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127769;</span>
-    <h3>Greater Glider</h3>
-    <p class="sci">Petauroides volans</p>
-    <span class="taxonomy-badge tx-mammal" style="margin-bottom:.9rem;display:inline-block">Mammal</span>
+    <button class="panel-close" onclick="closeSpecies('tiger-mosquito')">&times;</button>
+    <img class="species-panel-img" src="images/species/tm.jpeg" alt="Tiger Mosquito" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129567;</span>
+    <h3>Tiger Mosquito</h3>
+    <p class="sci">Aedes aegypti</p>
+    <span class="taxonomy-badge tx-invasive" style="margin-bottom:.9rem;display:inline-block">Disease Vector</span>
     <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Threatened arboreal marsupial; range contracting as temperatures warm across eastern Australia</li>
-      <li>Case study species in a 2026 paper on downscaled bioclimatic projections for SDMs (<em>Environmental Research: Climate</em>)</li>
-      <li>High-resolution climate projections significantly improve SDM accuracy compared to coarser global datasets</li>
-      <li>Findings inform conservation planning and prioritisation of habitat corridors across the eastern Australian range</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-ebb">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('ebb')">&times;</button>
-    <img class="species-panel-img" src="images/species/ebb.jpeg" alt="Eastern Bristlebird" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129413;</span>
-    <h3>Eastern Bristlebird</h3>
-    <p class="sci">Dasyornis brachypterus</p>
-    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Endangered ground-dwelling bird; dependent on dense coastal and highland heathland</li>
-      <li>EcoCommons MaxEnt models used to predict undiscovered habitat by combining known records with environmental layers</li>
-      <li>Field teams deployed acoustic sensors in predicted areas — new individuals detected within six months</li>
-      <li>Outcome highlighted in EcoCommons' 2026 Australian Museum Eureka Prize profile as a real-world conservation impact</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-noisy-miner">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('noisy-miner')">&times;</button>
-    <img class="species-panel-img" src="images/species/nm.jpeg" alt="Noisy Miner" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128038;</span>
-    <h3>Noisy Miner</h3>
-    <p class="sci">Manorina melanocephala</p>
-    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Native honeyeater; functionally overabundant in degraded woodland edges due to habitat simplification</li>
-      <li>Aggressively excludes smaller insectivores from foraging and nesting sites</li>
-      <li>Capertee Valley (NSW): Noisy Miner dominance suppresses Regent Honeyeater recovery — a native species acting as a conservation threat</li>
-      <li>High Noisy Miner density used as a flag for habitats requiring structural restoration to support functional bird communities</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-regent-honeyeater">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('regent-honeyeater')">&times;</button>
-    <img class="species-panel-img" src="images/species/regent.png" alt="Regent Honeyeater" onerror="this.style.display='none'">
-    <h3>Regent Honeyeater</h3>
-    <p class="sci">Anthochaera phrygia</p>
-    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Critically endangered — fewer than 350–500 individuals estimated in the wild; one of Australia's rarest songbirds</li>
-      <li>Has lost learned song culture through population collapse; captive-bred birds no longer sing species-typical songs</li>
-      <li>Capertee Valley (NSW) holds the largest known population but is under pressure from Noisy Miner competition and habitat loss</li>
-      <li>SDM analysis modelled both habitat requirements and Noisy Miner density as a co-occurring pressure layer to identify priority restoration areas</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-richmond-birdwing">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('richmond-birdwing')">&times;</button>
-    <img class="species-panel-img" src="images/species/richmond.png" alt="Richmond Birdwing" onerror="this.style.display='none'">
-    <h3>Richmond Birdwing</h3>
-    <p class="sci">Ornithoptera richmondia</p>
-    <span class="taxonomy-badge tx-insect" style="margin-bottom:.9rem;display:inline-block">Insect</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>One of Australia's largest butterflies; restricted to a narrow subtropical rainforest corridor in south-east Queensland</li>
-      <li>Sole larval host plant: Richmond Birdwing Vine (<em>Pararistolochia praevenosa</em>) — also restricted to the same range</li>
-      <li>Invasive Dutchman's Pipe vine (<em>Aristolochia elegans</em>) is a toxic look-alike; females lay eggs on it but caterpillars die</li>
-      <li>SDM work mapped butterfly range, host plant distribution, and invasive vine overlap to prioritise weed management and assisted revegetation</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-lyrebird">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('lyrebird')">&times;</button>
-    <img class="species-panel-img" src="images/species/sl.jpeg" alt="Superb Lyrebird" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127925;</span>
-    <h3>Superb Lyrebird</h3>
-    <p class="sci">Menura novaehollandiae</p>
-    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>SDMs used to assess 2019–20 Black Summer bushfire impacts on habitat; key outcome contributing to EcoCommons' 2026 Eureka Prize win</li>
-      <li>Ecosystem engineer: digging and scratching cycles nutrients and shapes understorey — post-fire decline cascades through forest regeneration</li>
-      <li>Ground-dwelling; uses dense Lantana thickets as nesting cover in degraded habitats where native structural cover is absent</li>
-      <li>Management insight: blanket Lantana removal without simultaneous revegetation leaves ground-nesting birds exposed — restoration design must account for this</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-lantana">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('lantana')">&times;</button>
-    <img class="species-panel-img" src="images/species/lan.jpeg" alt="Lantana" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127802;</span>
-    <h3>Lantana</h3>
-    <p class="sci">Lantana camara</p>
-    <span class="taxonomy-badge tx-invasive" style="margin-bottom:.9rem;display:inline-block">Invasive</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>One of the world's worst invasive plant species — dense thickets suppress native understorey and degrade habitat for ground-dwelling fauna</li>
-      <li>Distribution data used alongside native species SDMs to prioritise weed management in subtropical Queensland restoration projects</li>
-      <li>Ecologically nuanced: in degraded habitats, Lantana thickets provide temporary nesting and shelter cover for ground-dwelling birds such as the Superb Lyrebird</li>
-      <li>Effective restoration requires targeted removal paired with simultaneous revegetation of native shrub equivalents — not blanket clearing</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-act-threatened">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('act-threatened')">&times;</button>
-    <img class="species-panel-img" src="images/species/koala.png" alt="ACT Threatened Species" onerror="this.style.display='none'">
-    <h3>ACT Threatened Species</h3>
-    <p class="sci">Multiple spp.</p>
-    <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li><strong>Purple Copper Butterfly</strong> (<em>Paralucia spinifera</em>) — mapping suitable habitat to inform management; host plant Native Blackthorn (<em>Bursaria spinosa</em>) modelled as an environmental layer; Namadgi NP study area</li>
-      <li><strong>Koala</strong> (<em>Phascolarctos cinereus</em>) — modelling potential habitat to guide acoustic sensor deployment for population monitoring in ACT forests</li>
-      <li><strong>Greater Glider</strong> (<em>Petauroides volans</em>) — habitat modelling to inform prescribed burn impact studies in Namadgi NP; extended with fire loading data from data.gov.au</li>
-      <li><strong>Canberra Golden Sun Moth</strong> (<em>Synemon plana</em>) — assessing population persistence in natural temperate grasslands under climate change; restricted to wallaby grass–dominated grasslands</li>
-      <li><strong>Canberra Spider Orchid</strong> (<em>Arachnorchis actensis</em>) — identifying new populations and translocation sites; restricted to Mt Ainslie and Mt Majura; highly sensitive to disturbance and climate</li>
-      <li>Additional species modelled at QLD scale: <strong>Greater Bilby</strong>, <strong>Armoured Mistfrog</strong>, <strong>Northern Hairy-nosed Wombat</strong>, <strong>Nangur Spiny Skink</strong> — algorithms compared across MaxEnt, GBM, RF, and ANN</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-mangroves-bc">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('mangroves-bc')">&times;</button>
-    <img class="species-panel-img" src="images/species/mangrooves.png" alt="Mangroves" onerror="this.style.display='none'">
-    <h3>Mangroves</h3>
-    <p class="sci">Avicennia / Rhizophora spp.</p>
-    <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Among the most carbon-dense habitats on Earth — sequestering carbon at rates far exceeding terrestrial forests</li>
-      <li><strong>Blue carbon accounting (Australia):</strong> mapping mangrove extent and condition as part of nature-based climate solutions work; connects to the Global Carbon Density Explorer tool</li>
-      <li><strong>Singapore TMSI project:</strong> distribution analysis to identify suitable mangrove plantation sites for a blue carbon project with the Tropical Marine Science Institute, National University of Singapore</li>
-      <li>SDM approaches used to map extent, assess condition, and identify candidate restoration and plantation locations for blue carbon sequestration</li>
-    </ul>
-  </div>
-</div>
-
-<div class="species-modal" id="sm-migratory-birds">
-  <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('migratory-birds')">&times;</button>
-    <img class="species-panel-img" src="images/species/mb.jpeg" alt="Migratory Birds" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127759;</span>
-    <h3>Migratory Birds</h3>
-    <p class="sci">Multiple spp.</p>
-    <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
-    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Two use cases on the East Australasian Flyway developed for the EcoCommons platform workshop series</li>
-      <li><strong>Avian Influenza precautionary study:</strong> SDMs modelling migratory shorebirds as potential HPAI vectors, identifying high-risk staging site overlaps along the flyway</li>
-      <li><strong>Curlew Sandpiper</strong> (<em>Calidris ferruginea</em>) — three subspecies; key Yellow Sea and north-west Australian staging sites</li>
-      <li><strong>Great Knot</strong> (<em>Calidris tenuirostris</em>) — critically endangered; severe habitat loss from coastal reclamation along the Yellow Sea</li>
-      <li><strong>Bar-tailed Godwit</strong> (<em>Limosa lapponica</em>) — longest non-stop migratory flight recorded (Alaska–New Zealand); temporal modelling showed January vs June distribution shifts along the flyway</li>
-      <li>Migratory modelling workflow published as an open GitHub starter kit: <code>getting_started_with_migratory_modelling</code></li>
+      <li><strong>Question:</strong> Where in Queensland are current and future climate conditions suitable for <em>Aedes aegypti</em>, the primary vector of dengue, Zika, and yellow fever?</li>
+      <li>Ensemble SDM (MaxEnt, GBM, GLM, RangeBagging) built on GBIF occurrence data and ~250m bioclimatic variables via EcoCommons; primary model AUC = 0.91</li>
+      <li>Habitat suitability maps generated for Townsville and broader Queensland; high-risk zones identified for targeted surveillance and control planning</li>
+      <li>Demonstrates SDM methodology extending conservation tools into biosecurity and public health decision-support</li>
+      <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7322872913399840796/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn post &#8599;</a></li>
     </ul>
   </div>
 </div>
@@ -626,12 +542,13 @@ css: styles.v2.css
     <button class="panel-close" onclick="closeSpecies('gossia')">&times;</button>
     <img class="species-panel-img" src="images/species/gos.jpeg" alt="Gossia" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127807;</span>
     <h3>Gossia</h3>
-    <p class="sci">Gossia spp.</p>
+    <p class="sci">Gossia punctata</p>
     <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
     <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Genus of rainforest myrtles (Myrtaceae); several species critically endangered in south-east Queensland</li>
-      <li>Trait-based analysis using AusTraits data to characterise trait–environment relationships for conservation planning</li>
-      <li>Work conducted as Functional Ecology Analyst at Griffith University — building decision-ready insights from functional trait data</li>
+      <li><strong>Question:</strong> What is the current and potential suitable habitat for <em>Gossia punctata</em> (Dotted Myrtle), reclassified from Least Concern to Critically Endangered in September 2024?</li>
+      <li>MaxEnt SDM built on GBIF occurrence data and ~250m bioclimatic variables; AUC = 0.94 — high discriminatory accuracy</li>
+      <li>Temperature thresholds: suitability declines sharply above 24 °C; higher rainfall strongly correlates with suitable habitat</li>
+      <li>Suitable zones extend inland from Brisbane into key dry rainforest regions of SE Queensland and NE New South Wales, informing targeted conservation surveys</li>
       <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7327975366763905025/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn post &#8599;</a></li>
     </ul>
   </div>
@@ -645,43 +562,44 @@ css: styles.v2.css
     <p class="sci">Pedionomus torquatus</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
     <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Critically endangered; so evolutionarily distinct it occupies its own family, Pedionomidae</li>
-      <li>Dependent on native grassland with sparse, patchy ground cover — habitat rapidly disappearing to cropping and pasture improvement</li>
-      <li>Females are more brightly coloured than males; males incubate eggs and raise chicks — an unusual reversal of typical bird sex roles</li>
+      <li><strong>Question:</strong> Where are current and future refuges for the Plains Wanderer, and are critical conservation areas adequately protecting predicted range shifts under climate change?</li>
+      <li>GLM and MaxEnt SDMs run via EcoCommons under RCP 4.5 and 6.0; GLM identified habitat corridors linking Oolambeyan, Yanga, and South West Woodland reserves</li>
+      <li>MaxEnt predicted more fragmented outcomes — suitability retreating into known refuge patches, signalling potential contraction even in protected areas</li>
+      <li>Critically endangered; evolutionarily distinct with reversed sex roles — females are brightly coloured, males incubate and raise chicks</li>
       <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7353563250225000449/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn post &#8599;</a></li>
     </ul>
   </div>
 </div>
 
-<div class="species-modal" id="sm-greater-sooty-owl">
+<div class="species-modal" id="sm-migratory-birds">
   <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('greater-sooty-owl')">&times;</button>
-    <img class="species-panel-img" src="images/species/gso.jpeg" alt="Greater Sooty Owl" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129423;</span>
-    <h3>Greater Sooty Owl</h3>
-    <p class="sci">Tyto tenebricosa</p>
-    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <button class="panel-close" onclick="closeSpecies('migratory-birds')">&times;</button>
+    <img class="species-panel-img" src="images/species/mb.jpeg" alt="Migratory Birds" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127759;</span>
+    <h3>Migratory Birds &amp; Avian Influenza Risk</h3>
+    <p class="sci">East Australasian Flyway</p>
+    <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
     <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>SDMs used alongside Superb Lyrebird to assess 2019–20 Black Summer bushfire impacts on habitat across south-eastern Australia</li>
-      <li>Large specialist predator of old-growth forest; highly sensitive to fire intensity and loss of tree hollows used for nesting</li>
-      <li>Reliable indicator species for old-growth forest condition</li>
-      <li>SDM outputs contributed to the EcoCommons team's 2026 Australian Museum Eureka Prize win</li>
+      <li><strong>Question:</strong> Which staging sites along the East Australasian Flyway represent the highest biosecurity risk for HPAI introduction by migratory shorebirds?</li>
+      <li><strong>Curlew Sandpiper</strong> (<em>Calidris ferruginea</em>, 3 subspecies) — staging sites across Yellow Sea and north-west Australia modelled to flag high-density overlap zones</li>
+      <li><strong>Great Knot</strong> (<em>Calidris tenuirostris</em>) — critically endangered; habitat loss from coastal reclamation along the Yellow Sea makes remaining staging sites priority biosecurity nodes</li>
+      <li><strong>Bar-tailed Godwit</strong> (<em>Limosa lapponica</em>) — longest recorded non-stop flight (Alaska–New Zealand); temporal SDMs compared January vs June flyway distributions to capture seasonal exposure windows</li>
+      <li>Migratory modelling workflow published as an open EcoCommons GitHub starter kit</li>
     </ul>
   </div>
 </div>
 
-<div class="species-modal" id="sm-tiger-mosquito">
+<div class="species-modal" id="sm-mangroves-bc">
   <div class="species-panel">
-    <button class="panel-close" onclick="closeSpecies('tiger-mosquito')">&times;</button>
-    <img class="species-panel-img" src="images/species/tm.jpeg" alt="Tiger Mosquito" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129302;</span>
-    <h3>Tiger Mosquito</h3>
-    <p class="sci">Aedes aegypti</p>
-    <span class="taxonomy-badge tx-invasive" style="margin-bottom:.9rem;display:inline-block">Disease Vector</span>
+    <button class="panel-close" onclick="closeSpecies('mangroves-bc')">&times;</button>
+    <img class="species-panel-img" src="images/species/mangrooves.png" alt="Mangroves" onerror="this.style.display='none'">
+    <h3>Mangroves</h3>
+    <p class="sci">Avicennia / Rhizophora spp.</p>
+    <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
     <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>SDM applied to a disease-vector species to map suitable habitat and predict potential spread under current and future climate</li>
-      <li>Demonstrates SDM tools extending beyond wildlife conservation into biosecurity and public health — modelled at QLD scale using MaxEnt and GLM</li>
-      <li>Comparing MaxEnt vs GLM algorithm outputs informs confidence in high-risk area identification</li>
-      <li>Maps support prioritisation of surveillance, targeted control, and policy intervention zones</li>
-      <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7322872913399840796/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn post &#8599;</a></li>
+      <li>Among the most carbon-dense ecosystems on Earth — sequestering carbon at rates far exceeding terrestrial forests per unit area</li>
+      <li><strong>Blue carbon accounting (Australia):</strong> mapping mangrove extent and condition as part of nature-based climate solutions work; analysis connects to the Global Carbon Density Explorer tool</li>
+      <li><strong>Singapore TMSI:</strong> spatial distribution analysis to identify suitable mangrove plantation sites for the Tropical Marine Science Institute, National University of Singapore — informing site selection for a blue carbon project</li>
+      <li>SDM and spatial analysis approaches used to map current extent, assess ecological condition, and identify candidate restoration locations across both contexts</li>
     </ul>
   </div>
 </div>
@@ -689,15 +607,272 @@ css: styles.v2.css
 <div class="species-modal" id="sm-ne-tree-frog">
   <div class="species-panel">
     <button class="panel-close" onclick="closeSpecies('ne-tree-frog')">&times;</button>
-    <img class="species-panel-img" src="images/species/netf.jpeg" alt="New England Tree Frog" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129436;</span>
+    <img class="species-panel-img" src="images/species/netf.jpeg" alt="New England Tree Frog" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128056;</span>
     <h3>New England Tree Frog</h3>
     <p class="sci">Ranoidea subglandulosa</p>
     <span class="taxonomy-badge tx-reptile" style="margin-bottom:.9rem;display:inline-block">Amphibian</span>
     <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
-      <li>Endemic highland stream species restricted to northern NSW; also known as the Glandular Tree Frog</li>
-      <li>MaxEnt models run at NSW and South East Australia scale comparing current vs projected future distribution under climate change</li>
-      <li>Range shift analysis shows contraction toward higher elevations and cooler refugia under warming scenarios</li>
-      <li>Demonstrates extinction risk analysis for data-limited amphibian species using publicly available occurrence and climate data</li>
+      <li><strong>Question:</strong> Where will suitable habitat remain for this endemic highland stream frog under projected climate warming, and which areas should be prioritised for conservation?</li>
+      <li>EcoCommons use case: MaxEnt SDM at NSW and SE Australia scale combining occurrence data with current and future bioclimatic variables</li>
+      <li>Range shift analysis demonstrates contraction toward higher elevations and cooler stream refugia under warming scenarios</li>
+      <li>Conservation area prioritisation maps identify which protected areas contain projected future refuges — supporting strategic reserve and corridor planning</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-bilby">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('bilby')">&times;</button>
+    <img class="species-panel-img" src="images/species/bilby.jpeg" alt="Greater Bilby" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128007;</span>
+    <h3>Greater Bilby</h3>
+    <p class="sci">Macrotis lagotis</p>
+    <span class="taxonomy-badge tx-mammal" style="margin-bottom:.9rem;display:inline-block">Mammal</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Which areas of Queensland represent current and future suitable habitat for the Greater Bilby, and how do algorithm choices affect confidence in predictions?</li>
+      <li>Multi-algorithm SDM comparison (MaxEnt, GBM, Random Forest, ANN) to assess model agreement and identify high-confidence suitability zones</li>
+      <li>Vulnerable marsupial; range severely contracted due to predation by feral cats and foxes, and competition from rabbits</li>
+      <li>Outputs designed to inform feral predator management priorities and translocation feasibility assessments</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-armed-mistfrog">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('armed-mistfrog')">&times;</button>
+    <img class="species-panel-img" src="images/species/mistfrog.jpeg" alt="Armoured Mistfrog" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128056;</span>
+    <h3>Armoured Mistfrog</h3>
+    <p class="sci">Litoria lorica</p>
+    <span class="taxonomy-badge tx-reptile" style="margin-bottom:.9rem;display:inline-block">Amphibian</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Where does suitable stream habitat persist for the Armoured Mistfrog in Queensland, and what is the probability of undiscovered populations?</li>
+      <li>Multi-algorithm SDM comparison (MaxEnt, GBM, RF, ANN) on Queensland occurrence data and fine-scale stream environment variables</li>
+      <li>Critically endangered; known only from fast-flowing boulder streams in north QLD; severely impacted by chytrid fungus (<em>Batrachochytrium dendrobatidis</em>)</li>
+      <li>Predicted suitable stream reaches outside known records were flagged as priority survey targets for population discovery</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-hairy-nosed-wombat">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('hairy-nosed-wombat')">&times;</button>
+    <img class="species-panel-img" src="images/species/wombat.jpeg" alt="Northern Hairy-nosed Wombat" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128059;</span>
+    <h3>Northern Hairy-nosed Wombat</h3>
+    <p class="sci">Lasiorhinus krefftii</p>
+    <span class="taxonomy-badge tx-mammal" style="margin-bottom:.9rem;display:inline-block">Mammal</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Which areas of Queensland hold conditions suitable for reintroduction of the Northern Hairy-nosed Wombat, and how do different SDM algorithms converge?</li>
+      <li>Multi-algorithm SDM (MaxEnt, GBM, RF, ANN) at Queensland scale to identify candidate translocation sites outside the single surviving wild population at Epping Forest NP</li>
+      <li>Critically endangered; fewer than 350 individuals known; one of the world's rarest mammals</li>
+      <li>Outputs identify potential reintroduction sites based on grassland type, soil texture, and climate conditions matching the species' burrowing requirements</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-nangur-skink">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('nangur-skink')">&times;</button>
+    <img class="species-panel-img" src="images/species/skink.jpeg" alt="Nangur Spiny Skink" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129422;</span>
+    <h3>Nangur Spiny Skink</h3>
+    <p class="sci">Nangura spinosa</p>
+    <span class="taxonomy-badge tx-reptile" style="margin-bottom:.9rem;display:inline-block">Reptile</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> What is the extent and distribution of potentially suitable habitat for the Nangur Spiny Skink in south-east Queensland?</li>
+      <li>Multi-algorithm SDM (MaxEnt, GBM, RF, ANN) to map habitat suitability and assess model agreement across algorithms</li>
+      <li>Vulnerable; known from a small area of moist eucalypt forest in SE Queensland; restricted to complex litter environments with persistent moisture</li>
+      <li>Predictions highlight which forest patches beyond known records may warrant targeted surveys for population monitoring</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-bar-tailed-godwit">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('bar-tailed-godwit')">&times;</button>
+    <img class="species-panel-img" src="images/species/godwit.jpeg" alt="Bar-tailed Godwit" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129415;</span>
+    <h3>Bar-tailed Godwit</h3>
+    <p class="sci">Limosa lapponica</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> How do seasonal distributions of the Bar-tailed Godwit shift along the East Australasian Flyway, and which staging sites are most critical for conservation?</li>
+      <li>Temporal SDMs compared January and June distributions — capturing full migration cycle from NZ/Australia wintering grounds to Alaska breeding range</li>
+      <li>Holds the world record for longest non-stop bird migration: ~11,000 km Alaska to New Zealand without stopping</li>
+      <li>Declining due to staging site loss from coastal reclamation along the Yellow Sea — temporal modelling identifies bottleneck sites requiring international protection</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-spider-orchid">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('spider-orchid')">&times;</button>
+    <img class="species-panel-img" src="images/species/orchid.jpeg" alt="Canberra Spider Orchid" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127801;</span>
+    <h3>Canberra Spider Orchid</h3>
+    <p class="sci">Arachnorchis actensis</p>
+    <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant · ACT</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Where might undiscovered populations of the Canberra Spider Orchid exist, and which sites are suitable for assisted translocation?</li>
+      <li>SDM built on ACT and SE NSW occurrence data; restricted to Mt Ainslie and Mt Majura; highly sensitive to soil disturbance, grazing, and altered hydrology</li>
+      <li>Critically endangered; dependent on specific fungal mycorrhizae — translocation site suitability modelled using soil and microhabitat proxies alongside climate variables</li>
+      <li>Outputs support targeted survey efforts in similar patch habitats and inform translocation risk assessment for assisted recovery</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-greater-glider">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('greater-glider')">&times;</button>
+    <img class="species-panel-img" src="images/species/gl.jpeg" alt="Greater Glider" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127769;</span>
+    <h3>Greater Glider</h3>
+    <p class="sci">Petauroides volans</p>
+    <span class="taxonomy-badge tx-mammal" style="margin-bottom:.9rem;display:inline-block">Mammal · ACT</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> How does using downscaled bioclimatic variables affect SDM accuracy for the Greater Glider, and which areas of Namadgi NP are most vulnerable to prescribed burn impacts?</li>
+      <li>Case study species in a 2026 peer-reviewed paper (<em>Environmental Research: Climate</em>): high-resolution downscaled bioclimatic variables significantly improve SDM accuracy vs coarser global datasets</li>
+      <li>ACT analysis extended with fire loading data (data.gov.au) to assess prescribed burn impact zones in Namadgi NP — informing management decisions for hollow-dependent fauna</li>
+      <li>Threatened arboreal marsupial; range contracting rapidly as temperatures warm across eastern Australia — findings inform corridor planning across the eastern range</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-golden-sun-moth">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('golden-sun-moth')">&times;</button>
+    <img class="species-panel-img" src="images/species/sunmoth.jpeg" alt="Canberra Golden Sun Moth" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128256;</span>
+    <h3>Canberra Golden Sun Moth</h3>
+    <p class="sci">Synemon plana</p>
+    <span class="taxonomy-badge tx-insect" style="margin-bottom:.9rem;display:inline-block">Insect · ACT</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Which natural temperate grassland patches in the ACT support viable Golden Sun Moth populations, and how will climate change affect their persistence?</li>
+      <li>SDM built on ACT occurrence data combined with wallaby grass (<em>Rytidosperma</em>) distribution and soil moisture variables — adult moths live only 1–2 days, so larval habitat is the critical layer</li>
+      <li>Critically endangered; restricted to natural temperate grassland on basalt soils — one of the most threatened ecosystems in Australia due to urban development</li>
+      <li>Outputs identify high-priority grassland patches for grazing management, herbicide exclusion, and developer offset planning</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-purple-copper">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('purple-copper')">&times;</button>
+    <img class="species-panel-img" src="images/species/copper.jpeg" alt="Purple Copper Butterfly" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129419;</span>
+    <h3>Purple Copper Butterfly</h3>
+    <p class="sci">Paralucia spinifera</p>
+    <span class="taxonomy-badge tx-insect" style="margin-bottom:.9rem;display:inline-block">Insect · ACT</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Where is suitable habitat for the Purple Copper Butterfly within the ACT, and which connectivity corridors link isolated subpopulations?</li>
+      <li>SDM incorporated host plant Native Blackthorn (<em>Bursaria spinosa</em>) distribution as an explicit environmental layer — mapping species habitat is inseparable from mapping its food plant</li>
+      <li>Namadgi NP study area; critically endangered; dependent on ant mutualism — larvae tended by <em>Anonychomyrma</em> ants whose colony distribution was also considered</li>
+      <li>Outputs mapped habitat patches and gap zones between subpopulations to prioritise restoration corridors for genetic connectivity</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-koala">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('koala')">&times;</button>
+    <img class="species-panel-img" src="images/species/koala.png" alt="Koala" onerror="this.style.display='none'">
+    <h3>Koala</h3>
+    <p class="sci">Phascolarctos cinereus</p>
+    <span class="taxonomy-badge tx-mammal" style="margin-bottom:.9rem;display:inline-block">Mammal · ACT</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Which areas of ACT forest have suitable habitat conditions to guide acoustic sensor and camera trap deployment for koala population monitoring?</li>
+      <li>SDM built on ACT occurrence records with eucalypt forest cover, slope, and climate variables — targeting sensor placement to reduce survey effort while maximising detection probability</li>
+      <li>Listed as endangered nationally; ACT population is at the southern extent of the range — long-term monitoring baseline critical for detecting climate-driven range shifts</li>
+      <li>Output maps translated directly into field deployment grid recommendations for ongoing population monitoring program</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-lyrebird">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('lyrebird')">&times;</button>
+    <img class="species-panel-img" src="images/species/sl.jpeg" alt="Lyrebird and Lantana" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127925;</span>
+    <h3>Lyrebird &amp; Lantana</h3>
+    <p class="sci">Menura novaehollandiae / Lantana camara</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird · Invasive</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> How does invasive Lantana removal interact with ground-nesting bird ecology, and what restoration strategy avoids creating new threats while managing an old one?</li>
+      <li>Superb Lyrebird SDMs assessed 2019–20 Black Summer bushfire habitat loss — a key outcome contributing to EcoCommons' 2026 Eureka Prize win</li>
+      <li>Ecological paradox: Lantana (<em>Lantana camara</em>), one of the world's worst invasive plants, provides critical nesting cover for ground-dwelling birds like the Lyrebird in degraded landscapes where native shrub structure is absent</li>
+      <li>SDM analysis combined Lantana distribution with Lyrebird nesting habitat to identify where blanket Lantana removal would expose ground-nesting birds — guiding a staged removal and revegetation strategy</li>
+      <li>Management insight: effective Lantana control requires simultaneous native understorey restoration — remove and replace, not remove and leave bare</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-noisy-miner">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('noisy-miner')">&times;</button>
+    <img class="species-panel-img" src="images/species/nm.jpeg" alt="Noisy Miner" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128038;</span>
+    <h3>Noisy Miner</h3>
+    <p class="sci">Manorina melanocephala</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question (Capertee Valley):</strong> How does Noisy Miner density interact with Regent Honeyeater habitat suitability, and which sites require structural restoration to enable Regent Honeyeater recovery?</li>
+      <li>Native honeyeater; functionally overabundant in degraded woodland edges — aggressively excludes smaller insectivores from foraging and nesting territories</li>
+      <li>Noisy Miner density modelled as a co-occurring pressure layer alongside Regent Honeyeater habitat SDM — identifying where the two species' ranges overlap and where Miner suppression is most acute</li>
+      <li>High Miner density used as a diagnostic flag for woodland habitats requiring structural restoration (foliage complexity, shrub layer reinstatement) to shift competitive dynamics in favour of the Regent Honeyeater</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-regent-honeyeater">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('regent-honeyeater')">&times;</button>
+    <img class="species-panel-img" src="images/species/regent.png" alt="Regent Honeyeater" onerror="this.style.display='none'">
+    <h3>Regent Honeyeater</h3>
+    <p class="sci">Anthochaera phrygia</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question (Capertee Valley):</strong> Which woodland patches support suitable habitat for Regent Honeyeater recovery, and where does Noisy Miner competition most severely limit that potential?</li>
+      <li>Critically endangered — fewer than 350 individuals estimated in the wild; has lost learned song culture through population collapse</li>
+      <li>Capertee Valley (NSW) holds the largest known wild population; SDM analysis identified high-suitability patches and overlaid Noisy Miner pressure distribution to map net recovery potential</li>
+      <li>Priority restoration areas identified where habitat quality is high but Noisy Miner density is suppressing occupancy — targeted structural restoration prescribed to shift competitive balance</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-ebb">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('ebb')">&times;</button>
+    <img class="species-panel-img" src="images/species/ebb.jpeg" alt="Eastern Bristlebird" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129413;</span>
+    <h3>Eastern Bristlebird</h3>
+    <p class="sci">Dasyornis brachypterus</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Where is undiscovered suitable habitat for the Eastern Bristlebird that could be confirmed through targeted acoustic survey deployment?</li>
+      <li>EcoCommons MaxEnt SDM combined known occurrence records with dense coastal and highland heathland environmental layers to predict candidate habitat beyond surveyed areas</li>
+      <li>Field teams deployed acoustic sensors in model-predicted areas — new individuals confirmed within six months</li>
+      <li>Outcome highlighted in EcoCommons' 2026 Australian Museum Eureka Prize submission as a direct, real-world conservation impact of reproducible modelling</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-richmond-birdwing">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('richmond-birdwing')">&times;</button>
+    <img class="species-panel-img" src="images/species/richmond.png" alt="Richmond Birdwing" onerror="this.style.display='none'">
+    <h3>Richmond Birdwing</h3>
+    <p class="sci">Ornithoptera richmondia</p>
+    <span class="taxonomy-badge tx-insect" style="margin-bottom:.9rem;display:inline-block">Insect</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> Where does the invasive Dutchman's Pipe vine overlap with Richmond Birdwing habitat, and which areas should be prioritised for weed management and host plant revegetation?</li>
+      <li>One of Australia's largest butterflies; restricted to a narrow subtropical rainforest corridor in SE Queensland</li>
+      <li>Sole larval host plant: Richmond Birdwing Vine (<em>Pararistolochia praevenosa</em>); invasive Dutchman's Pipe (<em>Aristolochia elegans</em>) is a toxic look-alike — females oviposit on it but larvae die</li>
+      <li>SDM work mapped butterfly range, native vine distribution, and invasive vine overlap — outputs prioritised weed removal zones and native host plant revegetation corridors for assisted population recovery</li>
+    </ul>
+  </div>
+</div>
+
+<div class="species-modal" id="sm-greater-sooty-owl">
+  <div class="species-panel">
+    <button class="panel-close" onclick="closeSpecies('greater-sooty-owl')">&times;</button>
+    <img class="species-panel-img" src="images/species/gso.jpeg" alt="Greater Sooty Owl" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129417;</span>
+    <h3>Greater Sooty Owl</h3>
+    <p class="sci">Tyto tenebricosa</p>
+    <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
+    <ul style="margin:.5rem 0 .9rem;padding-left:1.3rem;line-height:1.7;font-size:.97rem">
+      <li><strong>Question:</strong> How much old-growth forest habitat was lost to the 2019–20 Black Summer bushfires, and where are recovery priorities for hollow-dependent predators?</li>
+      <li>SDMs alongside Superb Lyrebird to assess fire-driven habitat loss across south-eastern Australia — key output contributing to EcoCommons' 2026 Eureka Prize win</li>
+      <li>Large specialist predator of old-growth forest; highly sensitive to fire intensity and loss of mature tree hollows used for nesting — reliable indicator of old-growth forest condition</li>
+      <li>Post-fire SDM outputs mapped recovery trajectories and identified unburnt refuges for population persistence during landscape regeneration</li>
     </ul>
   </div>
 </div>
