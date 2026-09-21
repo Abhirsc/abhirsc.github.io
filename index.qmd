@@ -224,7 +224,7 @@ css: styles.v2.css
   <!-- Species I've Worked With -->
   <section class="content-card">
     <h2>Species I've Worked With</h2>
-    <p style="margin:0 0 .5rem;font-size:.97rem;color:var(--muted-strong)">Click any card to read about the research context. Add photos to <code>images/species/</code> named by the slug shown below.</p>
+    <p style="margin:0 0 .5rem;font-size:.97rem;color:var(--muted-strong)">Field photography coming soon · click any card for research context.</p>
 
     <div class="species-grid">
 
