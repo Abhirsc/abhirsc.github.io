@@ -442,7 +442,7 @@ css: styles.v2.css
 <div class="species-modal" id="sm-regent-honeyeater">
   <div class="species-panel">
     <button class="panel-close" onclick="closeSpecies('regent-honeyeater')">&times;</button>
-    <img class="species-panel-img" src="images/species/regent.png" alt="Regent Honeyeater" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#128330;</span>
+    <img class="species-panel-img" src="images/species/regent.png" alt="Regent Honeyeater" onerror="this.style.display='none'">
     <h3>Regent Honeyeater</h3>
     <p class="sci">Anthochaera phrygia</p>
     <span class="taxonomy-badge tx-bird" style="margin-bottom:.9rem;display:inline-block">Bird</span>
@@ -458,7 +458,7 @@ css: styles.v2.css
 <div class="species-modal" id="sm-richmond-birdwing">
   <div class="species-panel">
     <button class="panel-close" onclick="closeSpecies('richmond-birdwing')">&times;</button>
-    <img class="species-panel-img" src="images/species/richmond.png" alt="Richmond Birdwing" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#129419;</span>
+    <img class="species-panel-img" src="images/species/richmond.png" alt="Richmond Birdwing" onerror="this.style.display='none'">
     <h3>Richmond Birdwing</h3>
     <p class="sci">Ornithoptera richmondia</p>
     <span class="taxonomy-badge tx-insect" style="margin-bottom:.9rem;display:inline-block">Insect</span>
@@ -506,7 +506,7 @@ css: styles.v2.css
 <div class="species-modal" id="sm-act-threatened">
   <div class="species-panel">
     <button class="panel-close" onclick="closeSpecies('act-threatened')">&times;</button>
-    <img class="species-panel-img" src="images/species/koala.png" alt="ACT Threatened Species" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127956;</span>
+    <img class="species-panel-img" src="images/species/koala.png" alt="ACT Threatened Species" onerror="this.style.display='none'">
     <h3>ACT Threatened Species</h3>
     <p class="sci">Multiple spp.</p>
     <span class="taxonomy-badge tx-group" style="margin-bottom:.9rem;display:inline-block">Group</span>
@@ -524,7 +524,7 @@ css: styles.v2.css
 <div class="species-modal" id="sm-mangroves-bc">
   <div class="species-panel">
     <button class="panel-close" onclick="closeSpecies('mangroves-bc')">&times;</button>
-    <img class="species-panel-img" src="images/species/mangrooves.png" alt="Mangroves" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="species-panel-emoji" style="display:none">&#127754;</span>
+    <img class="species-panel-img" src="images/species/mangrooves.png" alt="Mangroves" onerror="this.style.display='none'">
     <h3>Mangroves</h3>
     <p class="sci">Avicennia / Rhizophora spp.</p>
     <span class="taxonomy-badge tx-plant" style="margin-bottom:.9rem;display:inline-block">Plant</span>
@@ -773,6 +773,12 @@ function initGalleryEl(wrapper) {
       var modal = document.getElementById('sm-' + card.dataset.species);
       if (modal) modal.classList.add('open');
     });
+    var thumb = card.querySelector('.species-thumb img');
+    if (thumb) {
+      var markPending = function() { card.classList.add('photo-pending'); };
+      thumb.addEventListener('error', markPending);
+      if (thumb.complete && thumb.naturalWidth === 0) markPending();
+    }
   });
 
   /* ── Click outside to close species modals ── */
