@@ -77,6 +77,7 @@ css: styles.v2.css
       <button class="subtab-btn is-active" type="button" data-subtab="interviews">Interviews &amp; News</button>
       <button class="subtab-btn" type="button" data-subtab="certs">Certificates &amp; Awards</button>
       <button class="subtab-btn" type="button" data-subtab="pubs">Publications &amp; Research</button>
+      <button class="subtab-btn" type="button" data-subtab="presentations">Presentations</button>
       <button class="subtab-btn" type="button" data-subtab="investor">Investor Portfolio</button>
     </nav>
 
@@ -182,6 +183,59 @@ css: styles.v2.css
             0000-0002-2279-7060 &#8599;
           </span>
         </a>
+      </div>
+    </div>
+
+    <!-- Presentations -->
+    <div class="subtab-panel" data-subpanel="presentations">
+      <h2>Conference Presentations</h2>
+      <div class="pub-grid">
+
+        <a class="pub-card" href="https://zenodo.org/records/22879320" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">IWEC 2026 · Zenodo · CC BY 4.0</p>
+            <h3>Reproducible SDM as a Decision-Support Tool for Invasive Species Management</h3>
+          </div>
+          <p>Using EcoCommons to build reproducible, decision-ready species distribution model workflows for Lantana camara in India's Western Ghats — habitat suitability mapping and climate projections for early-detection survey planning.</p>
+          <span class="pub-badge">Indian Wildlife Ecology Conference · Jul 2026 &#8599;</span>
+        </a>
+
+        <a class="pub-card" href="https://zenodo.org/records/22297966" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">RSAA26 · Zenodo · CC BY 4.0</p>
+            <h3>Ecosystem Indicators Workflows: A FAIR, Modular Toolbox for Reproducible Ecological Assessment</h3>
+          </div>
+          <p>Transparent workflows for ecosystem indicator development across Australia — integrating ecosystem distribution data, controlled vocabularies, and persistent identifiers for reproducible ecological assessment at scale.</p>
+          <span class="pub-badge">Research Software Asia Australia · Aug 2026 &#8599;</span>
+        </a>
+
+        <a class="pub-card" href="https://zenodo.org/records/22299588" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">SciDataCon / IDW 2025 · Zenodo · CC BY 4.0</p>
+            <h3>Advancing Reproducible and Scalable Ecological Modelling with FAIR Data</h3>
+          </div>
+          <p>How FAIR data principles unlock reproducibility and scalability in ecological modelling — presented at SciDataCon's session on rigorous, responsible, and reproducible science in the era of FAIR data and AI.</p>
+          <span class="pub-badge">International Data Week · Brisbane · Oct 2025 &#8599;</span>
+        </a>
+
+        <a class="pub-card pub-card-draft" href="https://zenodo.org/records/22879493?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjI3ZDA1ZGY0LTc1N2YtNGRiYy1iODk4LWIwN2JkM2JhYTQxOCIsImRhdGEiOnt9LCJyYW5kb20iOiIzYzU3M2I3ZWE0ZjA2ZDRlNWIzZjI4NWNhZDA4OGY0YSJ9.Vkv4zf7aFkfLkSGKTbREpXY3ZgFvuN4ZuApxBG5SnYrQGMrQA9YJNor-aONYWx2Hawy2Qoruzay3McsnTo8bYA" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">Zenodo · Draft · Under Review</p>
+            <h3>Upcoming Presentation</h3>
+          </div>
+          <p>Conference presentation currently under review — preview available via Zenodo.</p>
+          <span class="pub-badge pub-badge-draft">Preview &#8599;</span>
+        </a>
+
+        <a class="pub-card pub-card-draft" href="https://zenodo.org/records/22879388?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjM4YjkyY2QxLTJhYzEtNDIzZS1iMWMzLThlMDZiNjA5MjM3ZiIsImRhdGEiOnt9LCJyYW5kb20iOiJmYWRmYTY2OTVkNWY0MjMxMmY5NGQ2OTZhNmU2MzMyNiJ9.YWrofg4FPixvHgLnnnTFmKPT9OuAl4LVooRxK2qMYRueZ0s0n_sXCeXgw7e_GUB12lVfFJDqlkJWTTikR02OvA" target="_blank" rel="noopener">
+          <div>
+            <p class="project-kicker">Zenodo · Draft · Under Review</p>
+            <h3>Upcoming Presentation</h3>
+          </div>
+          <p>Conference presentation currently under review — preview available via Zenodo.</p>
+          <span class="pub-badge pub-badge-draft">Preview &#8599;</span>
+        </a>
+
       </div>
     </div>
 

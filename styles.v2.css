@@ -1170,6 +1170,9 @@ body{
   align-self: flex-start;
 }
 
+.pub-card-draft { opacity: .72; }
+.pub-badge-draft { border-color: rgba(150,150,150,.3); color: var(--muted-strong); }
+
 /* ── Investor grid ── */
 .investor-grid { margin-top: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
