@@ -209,21 +209,7 @@ css: styles.v2.css
   <!-- Why My Research Matters -->
   <section class="content-card">
     <h2>Why My Research Matters</h2>
-    <p style="font-size:1.05rem;line-height:1.72;margin:0 0 1rem;max-width:760px">We are in the middle of a biodiversity crisis. The IPBES estimates one million species face extinction within decades — yet the tools to predict where, how fast, and what we can do about it have historically sat behind high computing barriers, specialist software, and institutional gatekeepers. My work is about closing that gap.</p>
-    <div class="impact-pillars">
-      <div class="impact-pillar">
-        <p class="impact-pillar-title">Ecological Intelligence at National Scale</p>
-        <p>Through EcoCommons, I help make cloud-based species distribution and biodiversity modelling accessible to ecologists across Australia — without requiring institutional computing infrastructure or deep technical expertise. Every reproducible workflow published is a method that can be reused, audited, and built upon by the whole community.</p>
-      </div>
-      <div class="impact-pillar">
-        <p class="impact-pillar-title">From Data to Conservation Decision</p>
-        <p>My position between technical development and the scientific community is the bridge. I support the full journey from raw data to actionable insight — testing digital products for usability, training ecologists in new workflows, translating findings across disciplines, and communicating complex ecological information to the people who need it most. Adapting to new tools, discovering better solutions, and connecting science to real-world problems is where I work best.</p>
-      </div>
-      <div class="impact-pillar">
-        <p class="impact-pillar-title">Science That Reaches People</p>
-        <p>The most rigorous analysis means nothing if it stays locked in a specialist pipeline. I prioritise connecting ecological solutions to the communities, organisations, and decision-makers who need them — whether that's a regional NGO, a government agency, or an international research body. Open platforms, plain-language outputs, and direct engagement are how science earns its impact.</p>
-      </div>
-    </div>
+    {{< include _generated/impact_pillars.html >}}
   </section>
 
   <!-- By the Numbers -->
@@ -232,51 +218,7 @@ css: styles.v2.css
       <h2 style="margin:0 0 .25rem">By the Numbers</h2>
       <p style="margin:0;font-size:.92rem;color:var(--muted-strong);letter-spacing:.03em;text-transform:uppercase">Research reach &amp; outcomes</p>
     </div>
-    <div class="impact-stats-grid">
-
-      <div class="istat">
-        <div class="istat-top"><span class="istat-num">2,000<sup>+</sup></span></div>
-        <div class="istat-label">Researchers &amp; agencies</div>
-        <div class="istat-context">using EcoCommons Australia for species distribution modelling &amp; biodiversity analysis — platform-wide public figure</div>
-        <div class="dot-grid" data-fill="40" data-total="40" data-overflow="true"></div>
-      </div>
-
-      <div class="istat">
-        <div class="istat-top"><span class="istat-num">116</span></div>
-        <div class="istat-label">People directly trained</div>
-        <div class="istat-context">ESA 2025 · Resbaz 2024 · IDW Brisbane 2025 plenary · EIW workshops · BRIN Indonesia · NZ science · Victoria NGO · NSW Gov · CSIRO · BirdLife</div>
-        <div class="dot-grid" data-fill="24" data-total="24" data-overflow="true"></div>
-      </div>
-
-      <div class="istat">
-        <div class="istat-top"><span class="istat-num">21</span></div>
-        <div class="istat-label">GitHub repositories</div>
-        <div class="istat-context">9 + 12 across two accounts — open workflows, SDM tools, ecological indicators &amp; migratory modelling starters</div>
-        <div class="dot-grid" data-fill="21" data-total="25"></div>
-      </div>
-
-      <div class="istat">
-        <div class="istat-top"><span class="istat-num">6</span><span class="istat-unit">mo</span></div>
-        <div class="istat-label">To locate new EBB populations</div>
-        <div class="istat-context">EcoCommons SDM predicted candidate habitat &#8594; acoustic sensors deployed &#8594; Eastern Bristlebird confirmed within 6 months</div>
-        <div class="dot-grid" data-fill="6" data-total="12"></div>
-      </div>
-
-      <div class="istat">
-        <div class="istat-top"><span class="istat-num">4</span></div>
-        <div class="istat-label">Scholarly citations</div>
-        <div class="istat-context">Semantic Scholar · Sep 2026 · 2 peer-reviewed papers — Env. Modelling &amp; Software (2024) · Env. Research: Climate (2026)</div>
-        <div class="dot-grid" data-fill="4" data-total="10"></div>
-      </div>
-
-      <div class="istat">
-        <div class="istat-top"><span class="istat-num" style="font-size:2.8rem;letter-spacing:-.03em">Eureka</span></div>
-        <div class="istat-label">2026 Australian Museum Prize</div>
-        <div class="istat-context">EcoCommons Australia · Data Platforms category · 2019–20 bushfire impact assessments for Superb Lyrebird &amp; Greater Sooty Owl cited as key outcomes</div>
-        <div class="dot-grid" data-fill="1" data-total="5"></div>
-      </div>
-
-    </div>
+    {{< include _generated/impact_stats.html >}}
   </section>
 
   <!-- Species I've Worked With -->

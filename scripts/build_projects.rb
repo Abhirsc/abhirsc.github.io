@@ -34,6 +34,8 @@ categories.each_with_index do |cat, idx|
     l1u    = row["link1_url"].to_s.strip
     l2l    = row["link2_label"].to_s.strip
     l2u    = row["link2_url"].to_s.strip
+    l3l    = row["link3_label"].to_s.strip
+    l3u    = row["link3_url"].to_s.strip
 
     card_class = coming_soon ? "project-card coming-soon" : "project-card"
     html << "    <article class=\"#{card_class}\">\n"
@@ -58,6 +60,9 @@ categories.each_with_index do |cat, idx|
       end
       unless l2l.empty? || l2u.empty?
         html << "        <a class=\"project-link project-link-outline\" href=\"#{CGI.escapeHTML(l2u)}\" target=\"_blank\" rel=\"noopener\">#{CGI.escapeHTML(l2l)}</a>\n"
+      end
+      unless l3l.empty? || l3u.empty?
+        html << "        <a class=\"project-link project-link-outline\" href=\"#{CGI.escapeHTML(l3u)}\" target=\"_blank\" rel=\"noopener\">#{CGI.escapeHTML(l3l)}</a>\n"
       end
       html << "      </div>\n"
     end

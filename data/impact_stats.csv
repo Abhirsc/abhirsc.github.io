@@ -1,0 +1,7 @@
+sort_order,num,unit,label,context,fill,total,overflow,num_style
+1,"2,000+","","Researchers & agencies","using EcoCommons Australia for species distribution modelling & biodiversity analysis — platform-wide public figure",40,40,true,
+2,116,"","People directly trained","ESA 2025 · Resbaz 2024 · IDW Brisbane 2025 plenary · EIW workshops · BRIN Indonesia · NZ science · Victoria NGO · NSW Gov · CSIRO · BirdLife",24,24,true,
+3,21,"","GitHub repositories","9 + 12 across two accounts — open workflows, SDM tools, ecological indicators & migratory modelling starters",21,25,false,
+4,6,mo,"To locate new EBB populations","EcoCommons SDM predicted candidate habitat → acoustic sensors deployed → Eastern Bristlebird confirmed within 6 months",6,12,false,
+5,4,"","Scholarly citations","Semantic Scholar · Sep 2026 · 2 peer-reviewed papers — Env. Modelling & Software (2024) · Env. Research: Climate (2026)",4,10,false,
+6,Eureka,"","2026 Australian Museum Prize","EcoCommons Australia · Data Platforms category · 2019–20 bushfire impact assessments for Superb Lyrebird & Greater Sooty Owl cited as key outcomes",1,5,false,"font-size:2.8rem;letter-spacing:-.03em"

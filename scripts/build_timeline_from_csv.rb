@@ -85,9 +85,23 @@ rows.each do |row|
   link      = row["link"].to_s.strip
   detail_id = "detail-#{year}"
 
-  # Parse multi-image column
-  images_raw = row["images"].to_s.strip
-  image_paths = images_raw.empty? ? [] : images_raw.split("|").map { |p| CGI.escapeHTML(normalize_image_path(p.strip)) }
+  raw_year = row["year"].to_s.strip
+
+  # Auto-detect gallery using YEAR_0, YEAR_1, YEAR_2 convention
+  # Uses Dir.glob to handle any extension case (.jpeg/.jpg/.png/.JPG etc.)
+  auto_images = []
+  (0..9).each do |i|
+    matches = Dir.glob(File.join(root, "images", "#{raw_year}_#{i}.{jpeg,jpg,png,JPEG,JPG,PNG}"))
+    break if matches.empty?
+    auto_images << "./images/#{File.basename(matches.first)}"
+  end
+
+  if auto_images.any?
+    image_paths = auto_images
+  else
+    images_raw = row["images"].to_s.strip
+    image_paths = images_raw.empty? ? [] : images_raw.split("|").map { |p| CGI.escapeHTML(normalize_image_path(p.strip)) }
+  end
   multi = image_paths.length > 1
 
   link_html = link.empty? ? "" : "\n          <a class=\"detail-link\" href=\"#{CGI.escapeHTML(link)}\" target=\"_blank\" rel=\"noopener\">Visit Website &#8599;</a>"
