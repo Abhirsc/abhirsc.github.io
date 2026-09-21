@@ -27,6 +27,7 @@ project:
 
 website:
   title: "Abhimanyu Raj Singh Chandel — Timeline Resume"
+  favicon: "favicon.svg"
   navbar: false
   page-navigation: false
   reader-mode: false
