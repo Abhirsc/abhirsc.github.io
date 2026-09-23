@@ -137,20 +137,50 @@ css: styles.v2.css
       </div>
 
       <h3 style="margin:2rem 0 .8rem;font-size:1rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted-strong);font-weight:700">Licences &amp; Certifications</h3>
-      <div class="cert-grid">
+      <div class="cert-slider">
         <div class="cert-card">
           <p class="cert-meta">NASBA · Feb 2024</p>
           <h3>R Programming for Data Science: High Variety Data Management</h3>
         </div>
         <div class="cert-card">
           <p class="cert-meta">LinkedIn · Jan 2024</p>
-          <h3>Python Data Analysis</h3>
-          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">Data structures in Python · NumPy · Pandas</p>
+          <h3>QGIS and Python for AEC</h3>
+          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">Python · AEC · QGIS</p>
         </div>
-        <div class="cert-card cert-card-placeholder">
-          <p class="cert-meta" style="opacity:.6">+ 13 more on LinkedIn</p>
-          <h3 style="opacity:.5">More certifications</h3>
-          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">Share the remaining certs to add them here.</p>
+        <div class="cert-card">
+          <p class="cert-meta">LinkedIn · Jan 2024</p>
+          <h3>Python Data Analysis</h3>
+          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">Data structures · NumPy · Pandas</p>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">Esri · May 2021</p>
+          <h3>Getting Started with the Geodatabase</h3>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">Esri · May 2020</p>
+          <h3>Getting Started with GIS</h3>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">Griffith University · Jan 2020</p>
+          <h3>Industrial Designer Certificate</h3>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">SafeWork NSW · Aug 2020</p>
+          <h3>Work Health &amp; Safety — General Construction Induction</h3>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">Transport for NSW</p>
+          <h3>NSW Full Drivers Licence</h3>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">CRISP India · Aug 2017</p>
+          <h3>Certified Graphic Designer</h3>
+          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">ID JSMMGD170407/2862</p>
+        </div>
+        <div class="cert-card">
+          <p class="cert-meta">CRISP India · Jul 2017</p>
+          <h3>Certified Professional Photographer (CPP)</h3>
+          <p style="font-size:.83rem;color:var(--muted-strong);margin:.1rem 0 0">ID JSMMDSP170311/2093</p>
         </div>
       </div>
     </div>

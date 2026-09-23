@@ -1125,8 +1125,20 @@ body{
 .award-desc { font-size: .88rem; line-height: 1.6; color: var(--muted-strong); margin: 0; }
 
 /* ── Certificates ── */
-.cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 1rem; }
+.cert-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: .75rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.cert-slider::-webkit-scrollbar { height: 5px; }
+.cert-slider::-webkit-scrollbar-track { background: transparent; }
+.cert-slider::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 10px; }
 .cert-card {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
   background: linear-gradient(180deg, rgba(255,245,218,.92), rgba(255,241,205,.78));
   border-left: 4px solid var(--accent);
   border-radius: 16px;
@@ -1382,15 +1394,16 @@ body{
 
 .detail-gallery {
   margin: 1rem 0; border-radius: 14px; overflow: hidden;
-  max-height: 340px; background: var(--paper-deep); position: relative;
+  background: var(--paper-deep); position: relative;
 }
-.detail-gallery-slides { display: flex; height: 100%; transition: transform .3s ease; }
+.detail-gallery-slides { display: flex; transition: transform .3s ease; }
 .detail-gallery-slide {
-  min-width: 100%; height: 340px;
+  min-width: 100%;
   display: flex; align-items: center; justify-content: center;
   background: var(--paper-deep);
 }
-#dgallery-2026 .detail-gallery-slide:first-child img { object-fit: contain; width: 100%; height: 100%; }
+.detail-gallery-slide img { width: 100%; height: auto; display: block; }
+#dgallery-2026 .detail-gallery-slide:first-child img { object-fit: contain; }
 .detail-gallery-controls {
   position: absolute; bottom: .55rem; left: 50%; transform: translateX(-50%);
   display: flex; gap: .45rem; align-items: center;
