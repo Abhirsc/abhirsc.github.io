@@ -17,6 +17,8 @@ css: styles.v2.css
   </div>
 </section>
 
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+
 <nav class="tab-nav" aria-label="Sections">
   <button class="tab-btn is-active" type="button" data-tab="overview">Overview</button>
   <button class="tab-btn" type="button" data-tab="timeline">Timeline</button>
@@ -1037,6 +1039,35 @@ function initGalleryEl(wrapper) {
   });
 
   initTimelineInteractions(document);
+
+  /* ── Dark mode toggle ── */
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    var root = document.documentElement;
+    var stored = localStorage.getItem('theme');
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+        btn.textContent = '☀️';
+        btn.title = 'Switch to light mode';
+      } else if (theme === 'light') {
+        root.setAttribute('data-theme', 'light');
+        btn.textContent = '🌙';
+        btn.title = 'Switch to dark mode';
+      } else {
+        root.removeAttribute('data-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        btn.textContent = prefersDark ? '☀️' : '🌙';
+      }
+    }
+    applyTheme(stored);
+    btn.addEventListener('click', function() {
+      var current = root.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+  })();
 
   /* ── Gallery init — all timeline cards and detail modals ── */
   document.querySelectorAll('.dneg-media-gallery, .detail-gallery').forEach(initGalleryEl);
