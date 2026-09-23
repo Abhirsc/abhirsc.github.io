@@ -1,5 +1,5 @@
 ---
-title: "Abhimanyu Raj Singh *Chandel*"
+title: "Abhimanyu Raj S Chandel - Keep Carving 🗿"
 format: html
 page-layout: full
 css: styles.v2.css
