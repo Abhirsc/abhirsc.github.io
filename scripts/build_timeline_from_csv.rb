@@ -46,7 +46,7 @@ def detail_gallery_html(image_paths, id_prefix)
   html = +"<div class=\"detail-gallery\" id=\"dgallery-#{id_prefix}\">\n"
   html << "  <div class=\"detail-gallery-slides\" id=\"dslides-#{id_prefix}\">\n"
   image_paths.each do |img|
-    html << "    <img class=\"detail-gallery-slide\" src=\"#{CGI.escapeHTML(img)}\" alt=\"\" loading=\"lazy\" style=\"object-fit:cover;width:100%;height:100%\" />\n"
+    html << "    <div class=\"detail-gallery-slide\"><img src=\"#{CGI.escapeHTML(img)}\" alt=\"\" loading=\"lazy\" /></div>\n"
   end
   html << "  </div>\n"
   html << "  <div class=\"detail-gallery-controls\">\n"

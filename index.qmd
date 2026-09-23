@@ -1041,6 +1041,15 @@ function initGalleryEl(wrapper) {
   /* ── Gallery init — all timeline cards and detail modals ── */
   document.querySelectorAll('.dneg-media-gallery, .detail-gallery').forEach(initGalleryEl);
 
+  /* ── Detail gallery: blurred backdrop per slide ── */
+  document.querySelectorAll('.detail-gallery-slide').forEach(function(slide) {
+    var img = slide.querySelector('img');
+    if (!img) return;
+    function applyBg() { slide.style.setProperty('--slide-bg-url', 'url(' + img.src + ')'); }
+    if (img.complete && img.naturalWidth > 0) { applyBg(); }
+    else { img.addEventListener('load', applyBg); }
+  });
+
   /* ── Species card clicks ── */
   document.querySelectorAll('.species-card').forEach(function(card) {
     card.addEventListener('click', function() {
