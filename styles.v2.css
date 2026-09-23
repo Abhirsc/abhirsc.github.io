@@ -1419,4 +1419,5 @@ body{
 .detail-gallery-controls {
   position: absolute; bottom: .55rem; left: 50%; transform: translateX(-50%);
   display: flex; gap: .45rem; align-items: center;
+  z-index: 2;
 }
